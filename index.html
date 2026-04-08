@@ -1,65 +1,55 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Joy Saha – Portfolio</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            condensed: ['"Barlow Condensed"', 'sans-serif'],
-            body: ['Barlow', 'sans-serif'],
-          },
-        }
-      }
-    }
-  </script>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Barlow:wght@400;500;600&display=swap"
+    rel="stylesheet" />
 </head>
-<body class="font-body bg-[#0d0d0d] text-white overflow-x-hidden">
 
-  <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 md:px-10 py-5 transition-all duration-300">
+<body class="font-body overflow-x-hidden bg-[#FAFAFA]">
+  <nav id="navbar"
+    class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 md:px-10 py-5 transition-all duration-300">
+    <!-- Logo + Menu -->
+    <div class="flex items-center gap-16">
+      <!-- Logo -->
+      <a href="index.html" class="flex items-center gap-3 shrink-0">
+        <img src="assets/images/Logo-Image.png" alt="Joy Saha" class="w-10 h-10 rounded-full object-cover" />
+        <span class="text-[17px] font-semibold text-[#c8c9d4] uppercase tracking-widest">Joy Saha</span>
+      </a>
 
-  <!-- Logo + Menu -->
-  <div class="flex items-center gap-16">
+      <!-- Menu -->
+      <ul class="hidden md:flex items-center gap-8 list-none ml-10">
+        <li>
+          <a href="#" class="text-[15px] font-semibold bg-white text-black px-5 py-2 rounded-full">Home</a>
+        </li>
+        <li>
+          <a href="#"
+            class="text-[15px] font-medium text-[#c8c9d4] hover:bg-white hover:text-black px-5 py-2 rounded-full">Services</a>
+        </li>
+        <li>
+          <a href="#"
+            class="text-[15px] font-medium text-[#c8c9d4] hover:bg-white hover:text-black px-5 py-2 rounded-full">Case
+            Studies</a>
+        </li>
+      </ul>
+    </div>
 
-    <!-- Logo -->
-    <a href="index.html" class="flex items-center gap-3 shrink-0">
-      <img
-        src="assets/images/hero-profile.png"
-        alt="Joy Saha"
-        class="w-10 h-10 rounded-full object-cover"
-      />
-      <span class="text-[17px] font-semibold text-[#c8c9d4] uppercase tracking-widest">Joy Saha</span>
+    <!-- RIGHT SIDE -->
+    <a href="#"
+      class="hidden md:block text-[14px] font-medium text-[#c8c9d4] hover:text-white uppercase tracking-widest underline underline-offset-4">
+      Download CV
     </a>
 
-    <!-- Menu -->
-    <ul class="hidden md:flex items-center gap-1 list-none ml-10">
-      <li>
-        <a href="#" class="text-[15px] font-semibold bg-white text-black px-5 py-2 rounded-full">Home</a>
-      </li>
-      <li>
-        <a href="#" class="text-[15px] font-medium text-[#c8c9d4] hover:text-white px-5 py-2 rounded-full">Services</a>
-      </li>
-      <li>
-        <a href="#" class="text-[15px] font-medium text-[#c8c9d4] hover:text-white px-5 py-2 rounded-full">Case Studies</a>
-      </li>
-    </ul>
-
-  </div>
-
-  <!-- RIGHT SIDE -->
-  <a href="#" class="hidden md:block text-[14px] font-medium text-[#c8c9d4] hover:text-white uppercase tracking-widest underline underline-offset-4">
-    Download CV
-  </a>
-
-
-
     <!-- Hamburger (mobile) -->
-    <button id="hamburger" class="md:hidden flex flex-col justify-center items-center gap-[5px] w-8 h-8 focus:outline-none" aria-label="Toggle menu">
+    <button id="hamburger"
+      class="md:hidden flex flex-col justify-center items-center gap-[5px] w-8 h-8 focus:outline-none"
+      aria-label="Toggle menu">
       <span id="ham1" class="block w-6 h-[1.5px] bg-white transition-all duration-300"></span>
       <span id="ham2" class="block w-6 h-[1.5px] bg-white transition-all duration-300"></span>
       <span id="ham3" class="block w-4 h-[1.5px] bg-white transition-all duration-300"></span>
@@ -67,109 +57,208 @@
   </nav>
 
   <!-- Mobile Menu -->
-  <div id="mobile-menu" class="hidden md:hidden fixed top-[70px] left-0 right-0 z-40 bg-[#0a0a0a] backdrop-blur-xl border-t border-white/10 flex-col gap-5 px-10 py-7">
-    <a href="#" class="text-xl font-medium text-[#c8c9d4] hover:text-white tracking-wide transition-colors duration-200">Home</a>
-    <a href="#" class="text-xl font-medium text-[#c8c9d4] hover:text-white tracking-wide transition-colors duration-200">Services</a>
-    <a href="#" class="text-xl font-medium text-[#c8c9d4] hover:text-white tracking-wide transition-colors duration-200">Case Studies</a>
-    <a href="#" class="text-xl font-medium text-[#c8c9d4] hover:text-white tracking-wide transition-colors duration-200">Download CV</a>
+  <div id="mobile-menu"
+    class="hidden md:hidden fixed top-[70px] left-0 right-0 z-40 bg-[#0a0a0a] backdrop-blur-xl border-t border-white/10 flex-col gap-5 px-10 py-7">
+    <a href="#"
+      class="text-xl font-medium text-[#c8c9d4] hover:text-white tracking-wide transition-colors duration-200">Home</a>
+    <a href="#"
+      class="text-xl font-medium text-[#c8c9d4] hover:text-white tracking-wide transition-colors duration-200">Services</a>
+    <a href="#"
+      class="text-xl font-medium text-[#c8c9d4] hover:text-white tracking-wide transition-colors duration-200">Case
+      Studies</a>
+    <a href="#"
+      class="text-xl font-medium text-[#c8c9d4] hover:text-white tracking-wide transition-colors duration-200">Download
+      CV</a>
   </div>
 
   <!-- HERO -->
-  <section class=" hero relative min-h-screen flex items-center overflow-hidden">
-
+  <section class="hero relative min-h-screen flex items-center overflow-hidden bg-[#0d0d0d] text-white">
     <!-- Left vignette overlay -->
     <div class="absolute inset-y-0 left-0 w-2/5 z-0 bg-gradient-to-r from-[#0d0d0d] to-transparent"></div>
 
     <!-- Watermark letter -->
-    <span class="absolute right-[3%] top-1/2 -translate-y-1/2 font-condensed font-black leading-none text-white/[0.05] pointer-events-none select-none z-10"
-          style="font-size: clamp(200px, 22vw, 320px);">
-      b
+    <span
+      class="absolute right-[10%] top-1/2 -translate-y-1/2 font-condensed font-black leading-none text-white/[0.05] pointer-events-none select-none z-12"
+      style="font-size: clamp(200px, 22vw, 250px)">
+      JOY SAHA
     </span>
 
     <!-- Person image -->
-     <div class="absolute right-0 bottom-0 h-[100%] z-10 pointer-events-none object-contain object-bottom">
-        <img src="assets/images/hero-bg.png" alt="Joy Saha" onerror="this.style.display='none'"/>
-     </div>
-     
-    <div class="person-image absolute right-[10%] bottom-0 h-[95%] z-20 pointer-events-none object-contain object-bottom">
-        <img src="assets/images/hero-profile.png" alt="Joy Saha" onerror="this.style.display='none'"/>
+    <div class="absolute right-0 bottom-0 h-[100%] z-10 pointer-events-none object-contain object-bottom">
+      <img src="assets/images/hero-bg.png" alt="Joy Saha" onerror="this.style.display = 'none'" />
+    </div>
+
+    <div
+      class="person-image absolute right-[10%] bottom-0 h-[95%] z-20 pointer-events-none object-contain object-bottom">
+      <img src="assets/images/hero-profile.png" alt="Joy Saha" onerror="this.style.display = 'none'" />
     </div>
 
     <!-- Floating project card -->
-    <div class="absolute right-[10%] bottom-[15%] z-30 rounded-2xl overflow-hidden border border-white/10 backdrop-blur-md bg-white/5 shadow-2xl w-76.5">
-      <img src="assets/images/thumbnail-image.png" alt="Project Preview" class="w-full block" onerror="this.style.display='none'"/>
+    <div
+      class="absolute right-[10%] bottom-[15%] z-30 rounded-2xl overflow-hidden border border-white/10 backdrop-blur-md bg-white/5 shadow-2xl w-76.5">
+      <img src="assets/images/thumbnail-image.png" alt="Project Preview" class="w-full block"
+        onerror="this.style.display = 'none'" />
     </div>
 
     <!-- Hero Content -->
-    <div class="relative z-40 px-6 md:px-16 lg:px-20 max-w-170 mt-20">
-
+    <div class="z-40 px-6 md:px-16 lg:px-20 max-w-270 mt-20">
       <!-- Greeting -->
-      <p class="text-[13px] md:text-[15px] font-semibold uppercase tracking-[0.14em] text-[#c8c9d4] mb-4">
+      <p class="text-[13px] md:text-[15px] font-semibold uppercase tracking-[0.14em] text-[#c8c9d4] mb-4 ml-0">
         Hi I'm <span class="text-[#7c5cfc]">Joy Saha</span>
       </p>
 
       <!-- Headline -->
-      <h1 class="font-condensed font-black uppercase leading-none tracking-tight mb-9"
-          style="font-size: clamp(46px, 4vw, 76px);">
-        <span class="text-white">Crafting Visually</span><br>
-        <span class="text-white">Compelling User</span><br>
-        <span class="text-[#7a7b85]">Focused Digital</span><br>
+      <h1 class="font-condensed font-black uppercase leading-none mb-9"
+        style="font-size: clamp(46px, 4vw, 56px)">
+        <span class="text-white">Crafting Visually</span><br />
+        <span class="text-white">Compelling User</span><br />
+        <span class="text-[#7a7b85]">Focused Digital</span><br />
         <span class="text-[#7a7b85]">Experiences</span>
       </h1>
 
       <!-- CTA Button -->
       <a href="#"
-         class="inline-flex items-center gap-3 bg-[#775aeb] text-white text-[13px] font-semibold uppercase tracking-[0.1em] px-7 py-4 rounded-full transition-all duration-200 hover:-translate-y-0.5">
+        class="inline-flex items-center gap-3 bg-[#775aeb] text-white text-[13px] font-semibold uppercase tracking-[0.1em] px-7 py-4 rounded-full transition-all duration-200 hover:-translate-y-0.5">
         View My Works
-        <svg class="w-[18px] h-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M5 12h14M12 5l7 7-7 7"/>
+        <svg class="w-[18px] h-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path d="M5 12h14M12 5l7 7-7 7" />
         </svg>
       </a>
     </div>
   </section>
 
-  <section>
-    <div class="container mx-auto w-full text-center font-">
-        hello world!
-    </div>
+
+  <!-- About Section -->
+
+  <section class="relative min-h-screen flex items-center overflow-hidden text-black">
+    <!-- Top Left Text -->
+    <span
+      class="absolute top-[2%] left-[2%] font-condensed font-black leading-none text-[#E5E7EB] pointer-events-none select-none rotate-0"
+      style="font-size: clamp(100px, 22vw, 150px)">
+      CREATIVE
+    </span>
+
+    <!-- Bottom Right Text -->
+    <span
+      class="absolute bottom-[5%] right-[5%] font-condensed font-black leading-none text-[#E5E7EB] pointer-events-none select-none z-12"
+      style="font-size: clamp(100px, 22vw, 150px)">
+      DESIGNER
+    </span>
+
+    <div class="w-full bg-[#FFFFFF] shadow-[150px_152px_128px_0_rgba(0,0,0,0.01)] max-w-285.5 mx-auto px-37 py-25 z-10">
+      <div class="pb-[20px]">
+        <span class="text-[24px]">About Me</span>
+      </div>
+
+
+      <div class="relative w-full max-w-212 mx-auto bg-[#FAFAFA] py-20">
+
+        <div class="about-img flex justify-between gap-8 -ml-20 -mr-20">
+          <div class="opacity-70">
+            <img src="assets/images/thumbnail-image-1.png" alt="thumbnail image" class="w-full" />
+          </div>
+          <div class="opacity-50">
+            <img src="assets/images/thumbnail-image-2.png" alt="thumbnail image" class="w-full" />
+          </div>
+          <div class="opacity-50">
+            <img src="assets/images/thumbnail-image-3.png" alt="thumbnail image" class="w-full" />
+          </div>
+          <div class="opacity-70">
+            <img src="assets/images/thumbnail-image-4.png" alt="thumbnail image" class="w-full" />
+          </div>
+        </div>
+
+        <div class="absolute right-[25%] top-[38%] -translate-y-1/2 font-condensed font-black leading-none text-white/[0.05] pointer-events-none select-none z-12 text-[clamp(250px,22vw,350px)]">
+          <img src="assets/images/about-profile.png" alt="About Profile" />
+        </div>
+      </div>
+
+      <div class="p-2">
+        <span class="text-[18px]">I COMBINE CREATIVITY AND STRATEGY TO DESIGN ENGAGING, INTUITIVE
+        </span>
+        <br />
+        <span class="text-[#7a7b85] text-[18px]">DIGITAL PRODUCTS THAT LOOK GREAT AND DELIVER IMPACT</span>
+      </div>
   </section>
 
+  <!-- SELECTED WORKS -->
+   <section class="min-h-screen">
+  <div class="bg-[url('../images/selected-works-bg.png')] bg-cover bg-center bg-no-repeat max-w-[1014px] mx-auto w-full flex items-center justify-center">
+    <!-- <span class="text-[46px] font-condensed font-black leading-none">SELECTED WORKS</span> -->
+
+    <div class="w-full justify-between items-center flex px-6 py-4">
+      <span class="text-[#FFFFFF] text-[46px] font-condensed font-black leading-none">SELECTED WORKS</span>
+      <a href="#" class="text-white text-[24px] font-semibold hover:underline">See all works</a>
+    </div>
+   
+</div>
+  </div>
+</section>
+
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            condensed: ['"Barlow Condensed"', "sans-serif"],
+            body: ["Barlow", "sans-serif"],
+          },
+        },
+      },
+    };
+  </script>
   <script>
     // Navbar scroll glass effect
-    const navbar = document.getElementById('navbar');
-    window.addEventListener('scroll', () => {
+    const navbar = document.getElementById("navbar");
+
+    window.addEventListener("scroll", () => {
       if (window.scrollY > 20) {
-        navbar.classList.add('bg-[#0a0a0a]/80', 'backdrop-blur-xl', 'shadow-lg');
+        navbar.classList.add(
+          "bg-white/10", // light transparent
+          "backdrop-blur-md", // blur effect
+          "border-b",
+          "border-white/20",
+          "shadow-lg",
+        );
       } else {
-        navbar.classList.remove('bg-[#0a0a0a]/80', 'backdrop-blur-xl', 'shadow-lg');
+        navbar.classList.remove(
+          "bg-white/10",
+          "backdrop-blur-md",
+          "border-b",
+          "border-white/20",
+          "shadow-lg",
+        );
       }
     });
 
     // Hamburger toggle
-    const hamburger = document.getElementById('hamburger');
-    const mobileMenu = document.getElementById('mobile-menu');
-    const ham1 = document.getElementById('ham1');
-    const ham2 = document.getElementById('ham2');
-    const ham3 = document.getElementById('ham3');
+    const hamburger = document.getElementById("hamburger");
+    const mobileMenu = document.getElementById("mobile-menu");
+    const ham1 = document.getElementById("ham1");
+    const ham2 = document.getElementById("ham2");
+    const ham3 = document.getElementById("ham3");
 
-    hamburger.addEventListener('click', () => {
-      const isOpen = !mobileMenu.classList.contains('hidden');
+    hamburger.addEventListener("click", () => {
+      const isOpen = !mobileMenu.classList.contains("hidden");
       if (isOpen) {
-        mobileMenu.classList.add('hidden');
-        mobileMenu.classList.remove('flex');
-        ham1.style.transform = '';
-        ham2.style.opacity = '';
-        ham3.style.transform = '';
-        ham3.style.width = '1rem';
+        mobileMenu.classList.add("hidden");
+        mobileMenu.classList.remove("flex");
+        ham1.style.transform = "";
+        ham2.style.opacity = "";
+        ham3.style.transform = "";
+        ham3.style.width = "1rem";
       } else {
-        mobileMenu.classList.remove('hidden');
-        mobileMenu.classList.add('flex');
-        ham1.style.transform = 'translateY(6.5px) rotate(45deg)';
-        ham2.style.opacity = '0';
-        ham3.style.transform = 'translateY(-6.5px) rotate(-45deg)';
-        ham3.style.width = '1.5rem';
+        mobileMenu.classList.remove("hidden");
+        mobileMenu.classList.add("flex");
+        ham1.style.transform = "translateY(6.5px) rotate(45deg)";
+        ham2.style.opacity = "0";
+        ham3.style.transform = "translateY(-6.5px) rotate(-45deg)";
+        ham3.style.width = "1.5rem";
       }
     });
   </script>
 </body>
+
 </html>

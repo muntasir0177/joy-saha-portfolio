@@ -2,6 +2,11 @@
 @import "tailwindcss";
 
 
+
+
+
+
+
 .hero {
     /* background: black; */
     background: radial-gradient(ellipse 65% 90% at 70% 50%, #94071a 0%, #3a0a2a 40%, #0d0d0d 80%);
@@ -10,3 +15,15 @@
     -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%); 
     mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
 }
+
+.selected-works-bg {
+    background: url('../images/selected-works-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+
+

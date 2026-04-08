@@ -58,3 +58,38 @@ if (hamburger && mobileMenu) {
     });
   });
 }
+
+
+
+
+
+
+
+ // Navbar scroll glass effect
+   const navbar = document.getElementById('navbar');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 20) {
+    navbar.classList.add(
+      'bg-white/10',
+      'backdrop-blur-md',
+      'border-b',
+      'border-white/20',
+      'shadow-lg',
+      'text-black'
+    );
+
+    navbar.classList.remove('text-white'); // 👈 MUST
+  } else {
+    navbar.classList.remove(
+      'bg-white/10',
+      'backdrop-blur-md',
+      'border-b',
+      'border-white/20',
+      'shadow-lg',
+      'text-black'
+    );
+
+    navbar.classList.add('text-white'); // 👈 back to white
+  }
+});
