@@ -6,15 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Joy Saha – Portfolio</title>
   <link rel="stylesheet" href="assets/css/style.css" />
-
   <link
     href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Barlow:wght@400;500;600&display=swap"
     rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
+
 </head>
 
 <body class="font-body overflow-x-hidden bg-[#FAFAFA]">
-  <nav id="navbar"
-    class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 md:px-10 py-5 transition-all duration-300">
+  <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 md:px-10 py-5">
     <!-- Logo + Menu -->
     <div class="flex items-center gap-16">
       <!-- Logo -->
@@ -26,7 +28,8 @@
       <!-- Menu -->
       <ul class="hidden md:flex items-center gap-8 list-none ml-10">
         <li>
-          <a href="#" class="text-[15px] font-semibold bg-white text-black px-5 py-2 rounded-full">Home</a>
+          <a href="#"
+            class="text-[15px] font-medium text-[#c8c9d4] hover:bg-white hover:text-black px-5 py-2 rounded-full">Home</a>
         </li>
         <li>
           <a href="#"
@@ -108,8 +111,7 @@
       </p>
 
       <!-- Headline -->
-      <h1 class="font-condensed font-black uppercase leading-none mb-9"
-        style="font-size: clamp(46px, 4vw, 56px)">
+      <h1 class="font-condensed font-black uppercase leading-none mb-9" style="font-size: clamp(46px, 4vw, 56px)">
         <span class="text-white">Crafting Visually</span><br />
         <span class="text-white">Compelling User</span><br />
         <span class="text-[#7a7b85]">Focused Digital</span><br />
@@ -130,73 +132,448 @@
 
 
   <!-- About Section -->
+  <section class="relative min-h-screen flex items-center overflow-hidden text-black bg-white">
+  <span class="absolute top-[.5%] left-[2%] font-condensed font-black leading-none text-[#E5E7EB] pointer-events-none select-none" style="font-size: clamp(100px, 22vw, 150px)">
+    CREATIVE
+  </span>
 
-  <section class="relative min-h-screen flex items-center overflow-hidden text-black">
-    <!-- Top Left Text -->
-    <span
-      class="absolute top-[2%] left-[2%] font-condensed font-black leading-none text-[#E5E7EB] pointer-events-none select-none rotate-0"
-      style="font-size: clamp(100px, 22vw, 150px)">
-      CREATIVE
-    </span>
+  <span class="absolute bottom-[5%] right-[5%] font-condensed font-black leading-none text-[#E5E7EB] pointer-events-none select-none z-12" style="font-size: clamp(100px, 22vw, 150px)">
+    DESIGNER
+  </span>
 
-    <!-- Bottom Right Text -->
-    <span
-      class="absolute bottom-[5%] right-[5%] font-condensed font-black leading-none text-[#E5E7EB] pointer-events-none select-none z-12"
-      style="font-size: clamp(100px, 22vw, 150px)">
-      DESIGNER
-    </span>
+  <div class="w-full bg-[#FFFFFF] shadow-[0_0_128px_rgba(0,0,0,0.03)] max-w-285.5 mx-auto px-37 py-25 z-10">
+    <div class="pb-[20px]">
+      <span class="text-[24px]">About Me</span>
+    </div>
 
-    <div class="w-full bg-[#FFFFFF] shadow-[150px_152px_128px_0_rgba(0,0,0,0.01)] max-w-285.5 mx-auto px-37 py-25 z-10">
-      <div class="pb-[20px]">
-        <span class="text-[24px]">About Me</span>
-      </div>
-
-
-      <div class="relative w-full max-w-212 mx-auto bg-[#FAFAFA] py-20">
-
-        <div class="about-img flex justify-between gap-8 -ml-20 -mr-20">
-          <div class="opacity-70">
-            <img src="assets/images/thumbnail-image-1.png" alt="thumbnail image" class="w-full" />
-          </div>
-          <div class="opacity-50">
-            <img src="assets/images/thumbnail-image-2.png" alt="thumbnail image" class="w-full" />
-          </div>
-          <div class="opacity-50">
-            <img src="assets/images/thumbnail-image-3.png" alt="thumbnail image" class="w-full" />
-          </div>
-          <div class="opacity-70">
-            <img src="assets/images/thumbnail-image-4.png" alt="thumbnail image" class="w-full" />
-          </div>
-        </div>
-
-        <div class="absolute right-[25%] top-[38%] -translate-y-1/2 font-condensed font-black leading-none text-white/[0.05] pointer-events-none select-none z-12 text-[clamp(250px,22vw,350px)]">
-          <img src="assets/images/about-profile.png" alt="About Profile" />
+    <div class="relative w-full max-w-212 mx-auto bg-[#FAFAFA] py-20 before:absolute before:content-[''] before:left-0 before:top-0 before:w-full before:h-full before:bg-[linear-gradient(270deg,rgba(255,255,255,0)_0%,#fff_50%,rgba(255,255,255,0)_100%)] before:z-11">
+      
+      <div id="about-carousel" class="splide -ml-20 -mr-20">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <img src="assets/images/thumbnail-image1.png" alt="thumb" class="w-full object-cover aspect-348/260" />
+            </li>
+            <li class="splide__slide">
+              <img src="assets/images/thumbnail-image2.png" alt="thumb" class="w-full object-cover aspect-348/260" />
+            </li>
+            <li class="splide__slide">
+              <img src="assets/images/thumbnail-image3.png" alt="thumb" class="w-full object-cover aspect-348/260" />
+            </li>
+            <li class="splide__slide">
+              <img src="assets/images/thumbnail-image4.png" alt="thumb" class="w-full object-cover aspect-348/260" />
+            </li>
+          </ul>
         </div>
       </div>
 
-      <div class="p-2">
-        <span class="text-[18px]">I COMBINE CREATIVITY AND STRATEGY TO DESIGN ENGAGING, INTUITIVE
-        </span>
-        <br />
-        <span class="text-[#7a7b85] text-[18px]">DIGITAL PRODUCTS THAT LOOK GREAT AND DELIVER IMPACT</span>
+      <div class="absolute right-[25%] top-[38%] -translate-y-1/2 pointer-events-none select-none z-12">
+        <img src="assets/images/about-profile.png" alt="About Profile" />
       </div>
-  </section>
+    </div>
+
+    <div class="p-2">
+      <span class="text-[18px]">I COMBINE CREATIVITY AND STRATEGY TO DESIGN ENGAGING, INTUITIVE</span>
+      <br />
+      <span class="text-[#7a7b85] text-[18px]">DIGITAL PRODUCTS THAT LOOK GREAT AND DELIVER IMPACT</span>
+    </div>
+  </div>
+</section>
 
   <!-- SELECTED WORKS -->
-   <section class="min-h-screen">
-  <div class="bg-[url('../images/selected-works-bg.png')] bg-cover bg-center bg-no-repeat max-w-[1014px] mx-auto w-full flex items-center justify-center">
-    <!-- <span class="text-[46px] font-condensed font-black leading-none">SELECTED WORKS</span> -->
+  <section class="min-h-screen flex items-center justify-center p-6">
+    <div
+      class="max-w-[1888px] w-full bg-[url('../images/selected-works-bg.webp')] bg-cover bg-center bg-no-repeat rounded-2xl p-[80px] md:p-16 border border-white/5">
 
-    <div class="w-full justify-between items-center flex px-6 py-4">
-      <span class="text-[#FFFFFF] text-[46px] font-condensed font-black leading-none">SELECTED WORKS</span>
-      <a href="#" class="text-white text-[24px] font-semibold hover:underline">See all works</a>
+      <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4 mb-[80px]">
+        <h2 class="text-white text-2xl sm:text-3xl font-bold tracking-tight uppercase text-left sm:text-left">
+          Selected Works
+        </h2>
+        <a href="#"
+          class="text-white/80 hover:text-white transition-colors text-xs sm:text-sm font-medium flex sm:justify-end gap-2 uppercase tracking-widest">
+          See All Works
+          <svg xmlns="assets/images/vector.svg" class="w-4 h-4 sm:w-5 sm:h-5" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14m-7-7 7 7-7 7" />
+          </svg>
+        </a>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <a class="group cursor-pointer max-w-[840px] overflow-hidden">
+          <div class="rounded-xl overflow-hidden mb-4">
+            <img src="assets/images/service-image-1.png" alt="Blez"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]">
+          </div>
+          <h3 class="text-white text-xs font-bold uppercase tracking-widest">BLEZ – GAMIFIED PACK-OPENING PLATFORM</h3>
+        </a>
+
+        <a class="group cursor-pointer max-w-[840px] overflow-hidden">
+          <div class="rounded-xl overflow-hidden mb-4">
+            <img src="assets/images/service-image-2.png" alt="Blez"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]">
+          </div>
+          <h3 class="text-white text-xs font-bold uppercase tracking-widest">BLEZ – GAMIFIED PACK-OPENING PLATFORM</h3>
+        </a>
+
+        <a class="group cursor-pointer max-w-[840px] overflow-hidden">
+          <div class="rounded-xl overflow-hidden mb-4">
+            <img src="assets/images/service-image-3.png" alt="Blez"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]">
+          </div>
+          <h3 class="text-white text-xs font-bold uppercase tracking-widest">BLEZ – GAMIFIED PACK-OPENING PLATFORM</h3>
+        </a>
+
+        <a class="group cursor-pointer max-w-[840px] overflow-hidden">
+          <div class="rounded-xl overflow-hidden mb-4">
+            <img src="assets/images/service-image-4.png" alt="Blez"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]">
+          </div>
+          <h3 class="text-white text-xs font-bold uppercase tracking-widest">BLEZ – GAMIFIED PACK-OPENING PLATFORM</h3>
+        </a>
+
+      </div>
     </div>
-   
-</div>
+  </section>
+
+
+  <!-- Services -->
+  <section class="px-6 py-20 md:px-20">
+    <div class="max-w-7xl mx-auto mb-16">
+      <h2 class="text-4xl md:text-5xl font-black text-[#1A1A1A] uppercase tracking-tight">Services</h2>
+    </div>
+
+    <div class="max-w-7xl mx-auto flex flex-col">
+
+      <div class="group border-b border-neutral-200 py-6 relative transition-all duration-500">
+
+        <div class="flex flex-col z-10 relative">
+          <h3
+            class="text-2xl md:text-4xl font-bold text-[#1A1A1A] group-hover:text-[#7E5EFF] transition-colors duration-300 mb-[24px]">
+            Branding
+          </h3>
+
+          <div
+            class="flex flex-col md:flex-row md:justify-between w-full text-neutral-400 group-hover:text-[#7E5EFF] transition-colors duration-300 text-sm font-semibold uppercase tracking-widest gap-2 md:gap-0">
+            <span>Logo Design</span>
+            <span>Brand Identity</span>
+            <span class="md:text-right">Brand Guideline</span>
+          </div>
+        </div>
+
+        <div
+          class="absolute pointer-events-none left-[60%] bottom-[10%] w-52 z-20 opacity-0 scale-90 rotate-3 group-hover:opacity-100 group-hover:scale-100 group-hover:rotate-0 transition-all duration-500 ease-out hidden md:block">
+          <div class="w-full h-full bg-neutral-900 rounded-xl overflow-hidden shadow-2xl border border-white/20">
+            <img src="assets/images/rectangle167.png" alt="Service Preview" class="w-full h-full object-cover" />
+          </div>
+        </div>
+      </div>
+
+
+      <div class="group border-b border-neutral-200 py-6 relative transition-all duration-500">
+
+        <div class="flex flex-col z-10 relative">
+          <h3
+            class="text-2xl md:text-4xl font-bold text-[#1A1A1A] group-hover:text-[#7E5EFF] transition-colors duration-300 mb-[24px]">
+            Motion Design
+          </h3>
+
+          <div
+            class="flex flex-col md:flex-row md:justify-between w-full text-neutral-400 group-hover:text-[#7E5EFF] transition-colors duration-300 text-sm font-semibold uppercase tracking-widest gap-2 md:gap-0">
+            <span>Motion Graphics</span>
+            <span>2D Animation</span>
+            <span class="md:text-right">3D Animation</span>
+          </div>
+        </div>
+
+        <div
+          class="absolute pointer-events-none left-[60%] bottom-[10%] w-52 z-20 opacity-0 scale-90 rotate-3 group-hover:opacity-100 group-hover:scale-100 group-hover:rotate-0 transition-all duration-500 ease-out hidden md:block">
+          <div class="w-full h-full bg-neutral-900 rounded-xl overflow-hidden shadow-2xl border border-white/20">
+            <img src="assets/images/rectangle168.png" alt="Service Preview" class="w-full h-full object-cover" />
+          </div>
+        </div>
+      </div>
+
+
+      <div class="group border-b border-neutral-200 py-6 relative transition-all duration-500">
+
+        <div class="flex flex-col z-10 relative">
+          <h3
+            class="text-2xl md:text-4xl font-bold text-[#1A1A1A] group-hover:text-[#7E5EFF] transition-colors duration-300 mb-[24px]">
+            UI/UX Design
+          </h3>
+
+          <div
+            class="flex flex-col md:flex-row md:justify-between w-full text-neutral-400 group-hover:text-[#7E5EFF] transition-colors duration-300 text-sm font-semibold uppercase tracking-widest gap-2 md:gap-0">
+            <span>Design Systems</span>
+            <span>Web Design</span>
+            <span class="md:text-right">Framer Sites</span>
+          </div>
+        </div>
+
+        <div
+          class="absolute pointer-events-none left-[60%] bottom-[10%] w-52 z-20 opacity-0 scale-90 rotate-3 group-hover:opacity-100 group-hover:scale-100 group-hover:rotate-0 transition-all duration-500 ease-out hidden md:block">
+          <div class="w-full h-full bg-neutral-900 rounded-xl overflow-hidden shadow-2xl border border-white/20">
+            <img src="assets/images/rectangle167.png" alt="Service Preview" class="w-full h-full object-cover" />
+          </div>
+        </div>
+      </div>
+
+
+      <div class="group border-b border-neutral-200 py-6 relative transition-all duration-500">
+
+        <div class="flex flex-col z-10 relative">
+          <h3
+            class="text-2xl md:text-4xl font-bold text-[#1A1A1A] group-hover:text-[#7E5EFF] transition-colors duration-300 mb-[24px]">
+            Web development
+          </h3>
+
+          <div
+            class="flex flex-col md:flex-row md:justify-between w-full text-neutral-400 group-hover:text-[#7E5EFF] transition-colors duration-300 text-sm font-semibold uppercase tracking-widest gap-2 md:gap-0">
+            <span>Design Systems</span>
+            <span>Web Design</span>
+            <span class="md:text-right">Framer Sites</span>
+          </div>
+        </div>
+
+        <div
+          class="absolute pointer-events-none left-[60%] bottom-[10%] w-52 z-20 opacity-0 scale-90 rotate-3 group-hover:opacity-100 group-hover:scale-100 group-hover:rotate-0 transition-all duration-500 ease-out hidden md:block">
+          <div class="w-full h-full bg-neutral-900 rounded-xl overflow-hidden shadow-2xl border border-white/20">
+            <img src="assets/images/rectangle168.png" alt="Service Preview" class="w-full h-full object-cover" />
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- What Clients Say -->
+  <section class="splide" id="testimonial-carousel" aria-label="Client Testimonials">
+    <div class="max-w-[1888px] mx-auto w-full bg-[url('../images/selected-works-bg.webp')] bg-cover bg-center bg-no-repeat rounded-2xl px-6 md:px-16 pt-16 md:pt-[120px] pb-10 md:pb-[80px] border border-white/10 relative overflow-hidden shadow-2xl">
+      
+      <div class="absolute bottom-0 left-0 w-[50%] h-[50%] bg-rose-900/20 blur-[120px] pointer-events-none"></div>
+
+      <div class="mb-10 md:mb-[80px] relative z-10">
+        <h2 class="text-white text-3xl md:text-5xl font-bold tracking-tight uppercase">
+          What Clients Say
+        </h2>
+      </div>
+
+      <div class="splide__track relative z-10">
+        <div class="splide__list">
+
+          <div class="splide__slide grid grid-cols-1 lg:grid-cols-12 gap-6 md:gap-8 items-stretch">
+            <div class="lg:col-span-4 h-full">
+              <div class="rounded-3xl overflow-hidden h-full min-h-[400px] max-w-[555px]">
+                <img src="assets/images/reviewer-image1.png" alt="Client" class="w-full h-full object-cover" />
+              </div>
+            </div>
+            <div class="lg:col-span-8 bg-[#2D1B54]/90 backdrop-blur-sm rounded-3xl p-8 md:p-12 flex flex-col justify-between relative">
+              <div class="flex justify-between items-start">
+                <img src="assets/images/message-inv1.svg" alt="quote" class="w-12 h-12 text-white/20 fill-current">
+                <div class="flex space-x-1">
+                  <span class="text-purple-400 text-[32px]">★</span><span class="text-purple-400 text-[32px]">★</span><span class="text-purple-400 text-[32px]">★</span><span class="text-purple-400 text-[32px]">★</span><span class="text-purple-400 text-[32px]">★</span>
+                </div>
+              </div>
+              <div class="my-10 max-w-[1077px]">
+                <h3 class="text-white text-2xl md:text-4xl font-bold leading-tight uppercase">
+                  Joy has an incredible eye for design. He transformed our ideas
+                  <span class="opacity-40">into a clean, modern interface that stands out.</span>
+                </h3>
+              </div>
+              <div class="flex justify-end">
+                <img src="assets/images/message-inv2.svg" alt="quote" class="w-12 h-12 text-white/20 fill-current">  
+              </div>
+              <div class="flex justify-between items-end">
+                <div class="flex items-center space-x-4">
+                  <img src="assets/images/reviewer-image1.png" class="w-12 h-12 rounded-lg object-cover border border-white/10" alt="Avatar">
+                  <div>
+                    <p class="text-white font-bold text-sm tracking-widest uppercase">David Kim</p>
+                    <p class="text-white/50 text-xs uppercase mt-1">Founder, E-commerce Brand</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="splide__slide grid grid-cols-1 lg:grid-cols-12 gap-6 md:gap-8 items-stretch">
+            <div class="lg:col-span-4 h-full">
+              <div class="rounded-3xl overflow-hidden h-full min-h-[400px] max-w-[555px]">
+                <img src="assets/images/reviewer-image2.png" alt="Client" class="w-full h-full object-cover" />
+              </div>
+            </div>
+            <div class="lg:col-span-8 bg-[#2D1B54]/90 backdrop-blur-sm rounded-3xl p-8 md:p-12 flex flex-col justify-between relative">
+              <div class="flex justify-between items-start">
+                <img src="assets/images/message-inv1.svg" alt="quote" class="w-12 h-12 text-white/20 fill-current">
+                <div class="flex space-x-1">
+                  <span class="text-purple-400 text-[32px]">★</span><span class="text-purple-400 text-[32px]">★</span><span class="text-purple-400 text-[32px]">★</span><span class="text-purple-400 text-[32px]">★</span><span class="text-purple-400 text-[32px]">★</span>
+                </div>
+              </div>
+              <div class="my-10 max-w-[1077px]">
+                <h3 class="text-white text-2xl md:text-4xl font-bold leading-tight uppercase">
+                  WORKING WITH JOY WAS SMOOTH. HE UNDERSTANDS DESIGN AND BUSINESS, HELPING US IMPROVE.
+                </h3>
+              </div>
+              <div class="flex justify-end">
+                <img src="assets/images/message-inv2.svg" alt="quote" class="w-12 h-12 text-white/20 fill-current">  
+              </div>
+              <div class="flex justify-between items-end">
+                <div class="flex items-center space-x-4">
+                  <img src="assets/images/reviewer-image2.png" class="w-12 h-12 rounded-lg object-cover border border-white/10" alt="Avatar">
+                  <div>
+                    <p class="text-white font-bold text-sm tracking-widest uppercase">Sarah Mitchell</p>
+                    <p class="text-white/50 text-xs uppercase mt-1">Product Manager, SaaS Platform</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="splide__slide grid grid-cols-1 lg:grid-cols-12 gap-6 md:gap-8 items-stretch">
+            <div class="lg:col-span-4 h-full">
+              <div class="rounded-3xl overflow-hidden h-full min-h-[400px] max-w-[555px]">
+                <img src="assets/images/reviewer-image3.png" alt="Client" class="w-full h-full object-cover" />
+              </div>
+            </div>
+            <div class="lg:col-span-8 bg-[#2D1B54]/90 backdrop-blur-sm rounded-3xl p-8 md:p-12 flex flex-col justify-between relative">
+              <div class="flex justify-between items-start">
+                <img src="assets/images/message-inv1.svg" alt="quote" class="w-12 h-12 text-white/20 fill-current">
+                <div class="flex space-x-1">
+                  <span class="text-purple-400 text-[32px]">★</span><span class="text-purple-400 text-[32px]">★</span><span class="text-purple-400 text-[32px]">★</span><span class="text-purple-400 text-[32px]">★</span><span class="text-purple-400 text-[32px]">★</span>
+                </div>
+              </div>
+              <div class="my-10 max-w-[1077px]">
+                <h3 class="text-white text-2xl md:text-4xl font-bold leading-tight uppercase">
+                  Joy has an incredible eye for design. He transformed our ideas
+                  <span class="opacity-40">into a clean, modern interface that stands out.</span>
+                </h3>
+              </div>
+              <div class="flex justify-end">
+                <img src="assets/images/message-inv2.svg" alt="quote" class="w-12 h-12 text-white/20 fill-current">  
+              </div>
+              <div class="flex justify-between items-end">
+                <div class="flex items-center space-x-4">
+                  <img src="assets/images/reviewer-image3.png" class="w-12 h-12 rounded-lg object-cover border border-white/10" alt="Avatar">
+                  <div>
+                    <p class="text-white font-bold text-sm tracking-widest uppercase">Michael Rodri</p>
+                    <p class="text-white/50 text-xs uppercase mt-1">Healthcare Platform Co.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          </div>
+      </div>
+
+      <ul class="splide__pagination !static !mt-12 !flex !justify-center !space-x-3 !relative !z-10"></ul>
+
+    </div>
+  </section>
+
+
+
+<section class="flex items-center justify-center py-[120px] px-[96px]">
+  <div class="cta-main relative w-full max-w-[1728px] overflow-hidden rounded-xl shadow-2xl flex flex-col items-center justify-center text-center px-6 py-[100px]">
+    
+    <!-- <div class="absolute top-0 left-0 w-64 h-64 bg-blue-600/20 blur-[100px] rounded-full"></div>
+    <div class="absolute bottom-0 right-0 w-64 h-64 bg-emerald-600/10 blur-[100px] rounded-full"></div> -->
+
+    <div class="relative z-10">
+      <h2 class="text-white text-4xl md:text-5xl font-bold tracking-tight mb-4">
+        Have a Project in Mind?
+      </h2>
+      
+      <p class="text-gray-300 text-sm md:text-base max-w-lg mx-auto mb-8 leading-relaxed">
+        Let’s collaborate to create user experiences that not only look great but also deliver real results.
+      </p>
+
+      <button class="group cursor-pointer relative inline-flex items-center gap-2 px-8 py-3 rounded-full text-xs font-semibold text-white uppercase tracking-widest transition-all
+                     bg-gradient-to-r from-[#6366f1] to-[#a855f7] hover:shadow-[0_0_20px_rgba(168,85,247,0.5)] active:scale-95">
+        Start a Project
+        <svg xmlns="assets/images/vector.svg" class="h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+        </svg>
+      </button>
+    </div>
   </div>
 </section>
 
 
+
+<footer class="bg-black px-[80px] md:px-[160px] pt-[80px] pb-[24px]">
+  <div class="relative overflow-hidden text-white border border-white/5">
+    
+    <!-- <div class="absolute -bottom-32 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-pink-900/30 blur-[130px] rounded-full pointer-events-none"></div> -->
+
+    <div class="relative z-10">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[1.8fr_1fr_1fr_1fr] gap-12 mb-24">
+        
+        <div class="flex flex-col gap-8">
+          <div>
+            <h2 class="text-3xl font-bold tracking-tight uppercase mb-5">JOY SAHA</h2>
+            <p class="text-gray-400 text-base max-w-[280px] leading-relaxed">
+              I craft intuitive digital experiences with a focus on usability and detail.
+            </p>
+          </div>
+          
+          <!-- <div class="flex items-center gap-3">
+            <a href="#" class="w-11 h-11 rounded-full bg-[#1a1a1a] flex items-center justify-center hover:bg-[#333] transition-all border border-white/5">
+              <span class="text-sm font-bold text-gray-200">in</span>
+            </a>
+            <a href="#" class="w-11 h-11 rounded-full bg-[#1a1a1a] flex items-center justify-center hover:bg-[#333] transition-all border border-white/5">
+              <svg class="w-5 h-5 fill-gray-200" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+            </a>
+            <a href="#" class="w-11 h-11 rounded-full bg-[#1a1a1a] flex items-center justify-center hover:bg-[#333] transition-all border border-white/5">
+              <span class="text-sm font-bold text-gray-200">Bē</span>
+            </a>
+            <a href="#" class="w-11 h-11 rounded-full bg-[#1a1a1a] flex items-center justify-center hover:bg-[#333] transition-all border border-white/5">
+              <svg class="w-5 h-5 stroke-gray-200 fill-none" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+          </div> -->
+        </div>
+
+        <div>
+          <h3 class="text-sm font-bold uppercase tracking-[0.15em] text-white mb-8">Services</h3>
+          <ul class="flex flex-col gap-3">
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors text-[15px]">UI Design</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors text-[15px]">UX Research</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors text-[15px]">Motion Design</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors text-[15px]">Brand Strategy</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors text-[15px]">Art Direction</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-sm font-bold uppercase tracking-[0.15em] text-white mb-8">Connect</h3>
+          <ul class="flex flex-col gap-3">
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors text-[15px]">LinkedIn</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors text-[15px]">Dribbble</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors text-[15px]">Behance</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors text-[15px]">Instagram</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors text-[15px]">Twitter</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-sm font-bold uppercase tracking-[0.15em] text-white mb-8">Contact</h3>
+          <ul class="flex flex-col gap-4">
+            <li><a href="mailto:hello@sharifahammed.com" class="text-gray-300 hover:text-white transition-colors text-[15px]">hello@sharifahammed.com</a></li>
+            <li><a href="tel:+15551234567" class="text-gray-300 hover:text-white transition-colors text-[15px]">+1 (555) 123-4567</a></li>
+            <li><span class="text-gray-500 text-[15px]">Brooklyn, NY</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
   <script>
     tailwind.config = {
       theme: {
@@ -216,19 +593,23 @@
     window.addEventListener("scroll", () => {
       if (window.scrollY > 20) {
         navbar.classList.add(
-          "bg-white/10", // light transparent
-          "backdrop-blur-md", // blur effect
-          "border-b",
-          "border-white/20",
-          "shadow-lg",
-        );
-      } else {
-        navbar.classList.remove(
-          "bg-white/10",
+          "bg-gradient-to-r",
+          "from-[#010101]",
+          "to-[#830A65]",
           "backdrop-blur-md",
           "border-b",
           "border-white/20",
-          "shadow-lg",
+          "shadow-lg"
+        );
+      } else {
+        navbar.classList.remove(
+          "bg-gradient-to-r",
+          "from-[#E94A11]",
+          "to-[#830A65]",
+          "backdrop-blur-md",
+          "border-b",
+          "border-white/20",
+          "shadow-lg"
         );
       }
     });
@@ -258,6 +639,35 @@
         ham3.style.width = "1.5rem";
       }
     });
+
+   document.addEventListener('DOMContentLoaded', function () {
+    // 1. Testimonial Carousel
+    new Splide('#testimonial-carousel', {
+      type   : 'loop',
+      perPage: 1,
+      autoplay: true,
+      interval: 3000,
+      arrows : false,
+      pagination: true,
+      easing: 'cubic-bezier(0.25, 1, 0.5, 1)',
+    }).mount();
+
+    // 2. About Me Carousel
+    new Splide('#about-carousel', {
+      type       : 'loop',
+      drag       : 'free',
+      focus      : 'center',
+      autoWidth  : true, 
+      gap        : '2rem',
+      arrows     : false,
+      pagination : false,
+      autoScroll: {
+        speed: 0.7,
+        pauseOnHover: false,
+        pauseOnFocus: false,
+      },
+    }).mount( window.splide.Extensions ); // Pass extension here
+  });
   </script>
 </body>
 

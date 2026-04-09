@@ -24,6 +24,51 @@
 }
 
 
+/* Global Splide fix */
+  .splide__list {
+    display: flex !important;
+  }
+  
+  /* Testimonial Pagination (Scope to the container) */
+  #testimonial-carousel .splide__pagination__page {
+    height: 8px !important;
+    width: 8px !important;
+    background: rgba(255, 255, 255, 0.2) !important;
+    border-radius: 9999px !important;
+    border: none !important;
+    margin: 0 6px !important;
+    transition: all 0.3s ease !important;
+  }
 
+  #testimonial-carousel .splide__pagination__page.is-active {
+    width: 40px !important;
+    background: white !important;
+  }
 
+  /* About Me Carousel ONLY - Forces 180px */
+  #about-carousel .splide__slide {
+    width: 348px !important;
+    transition: opacity 0.3s ease;
+  }
 
+  #about-carousel .splide__slide img {
+    width: 348px !important;
+    height: auto;
+    border-radius: 1.5rem;
+    object-fit: cover;
+  }
+
+  .cta-main {
+    background: url('../images/CTA1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  footer{
+    background: url('../images/footer-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
