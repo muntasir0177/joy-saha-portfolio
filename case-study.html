@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Joy Saha – Portfolio</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Barlow:wght@400;500;600&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
+
+</head>
+
+<body>
+
+    <nav id="navbar"
+        class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 md:px-10 py-5 bg-white">
+        <!-- Logo + Menu -->
+        <div class="flex items-center gap-16">
+            <!-- Logo -->
+            <a href="index.html" class="flex items-center gap-3 shrink-0">
+                <img src="assets/images/Logo-Image.png" alt="Joy Saha" class="w-10 h-10 rounded-full object-cover" />
+                <span class="text-[17px] font-semibold text-black uppercase tracking-widest">Joy Saha</span>
+            </a>
+            <!-- Menu -->
+            <ul class="hidden md:flex items-center gap-8 list-none ml-10">
+                <li>
+                    <a href="#"
+                        class="text-[15px] font-medium text-black hover:bg-[#7E5EFF] hover:text-white px-5 py-2 rounded-full">Home</a>
+                </li>
+                <li>
+                    <a href="#"
+                        class="text-[15px] font-medium text-black hover:bg-[#7E5EFF] hover:text-white px-5 py-2 rounded-full">Case
+                        Studies</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- RIGHT SIDE -->
+        <a href="#"
+            class="hidden md:block text-[14px] font-medium text-text-black hover:bg-[#7E5EFF] uppercase tracking-widest underline underline-offset-4">
+            Download CV
+        </a>
+
+        <!-- Hamburger (mobile) -->
+        <button id="hamburger"
+            class="md:hidden flex flex-col justify-center items-center gap-[5px] w-8 h-8 focus:outline-none"
+            aria-label="Toggle menu">
+            <span id="ham1" class="block w-6 h-[1.5px] bg-black transition-all duration-300"></span>
+            <span id="ham2" class="block w-6 h-[1.5px] bg-black transition-all duration-300"></span>
+            <span id="ham3" class="block w-4 h-[1.5px] bg-black transition-all duration-300"></span>
+        </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu"
+        class="hidden md:hidden fixed top-[70px] left-0 right-0 z-40 bg-gradient-to-r from-[#010101] to-[#830A65] backdrop-blur-xl border-t border-white/10 flex-col gap-5 px-10 py-7 z-50">
+        <a href="index.html"
+            class="text-xl font-medium text-[#c8c9d4] hover:text-white tracking-wide transition-colors duration-200">Home</a>
+        <a href="case-study.html"
+            class="text-xl font-medium text-[#c8c9d4] hover:text-white tracking-wide transition-colors duration-200">Case
+            Studies</a>
+        <a href="#"
+            class="text-xl font-medium text-[#c8c9d4] hover:text-white tracking-wide transition-colors duration-200">Download
+            CV</a>
+    </div>
+
+
+
+    <section class="bg-white py-0 md:py-16 ">
+        <div class="mx-auto pt-12 md:pt-18 text-center">
+
+            <div class="text-center mb-12 pt-12 md:pt-15 px-4">
+
+                <p class="text-indigo-600 font-semibold text-sm uppercase mb-3">My Works</p>
+                <h2
+                    class="text-3xl md:text-4xl font-medium text-gray-800 leading-tight max-w-[600px] md:max-w-2xl mx-auto mb-8">
+                    A curated collection of UX projects focused on solving real user problems, improving product
+                    performance.
+                </h2>
+
+                <div class="mt-10 flex justify-center w-full overflow-x-auto pb-1.5 scrollbar-hide z-50">
+                    <ul class="flex items-center gap-2 md:gap-8 list-none mx-auto">
+                        <li>
+                            <a href="#"
+                                class="text-[14px] md:text-[15px] font-medium text-black hover:bg-[#7E5EFF] hover:text-white px-4 md:px-5 py-2 rounded-full transition-colors">
+                                Dashboard
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="text-[14px] md:text-[15px] font-medium text-black hover:bg-[#7E5EFF] hover:text-white px-4 md:px-5 py-2 rounded-full transition-colors">
+                                SaaS
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="text-[14px] md:text-[15px] font-medium text-black hover:bg-[#7E5EFF] hover:text-white px-4 md:px-5 py-2 rounded-full transition-colors">
+                                Mobile Apps
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="text-[14px] md:text-[15px] font-medium text-black hover:bg-[#7E5EFF] hover:text-white px-4 md:px-5 py-2 rounded-full transition-colors">
+                                Web Apps
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="w-full p-[10px] md:p-16 border border-white/5">
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <a class="group cursor-pointer max-w-[840px] overflow-hidden">
+                        <div class="rounded-xl overflow-hidden mb-4">
+                            <img src="assets/images/service-image-1.png" alt="Blez"
+                                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]">
+                        </div>
+                        <h3 class="text-xs font-bold uppercase tracking-widest">BLEZ – GAMIFIED
+                            PACK-OPENING
+                            PLATFORM</h3>
+                    </a>
+
+                    <a class="group cursor-pointer max-w-[840px] overflow-hidden">
+                        <div class="rounded-xl overflow-hidden mb-4">
+                            <img src="assets/images/service-image-2.png" alt="Blez"
+                                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]">
+                        </div>
+                        <h3 class="text-xs font-bold uppercase tracking-widest">BLEZ – GAMIFIED
+                            PACK-OPENING
+                            PLATFORM</h3>
+                    </a>
+
+                    <a class="group cursor-pointer max-w-[840px] overflow-hidden">
+                        <div class="rounded-xl overflow-hidden mb-4">
+                            <img src="assets/images/service-image-3.png" alt="Blez"
+                                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]">
+                        </div>
+                        <h3 class="text-xs font-bold uppercase tracking-widest">BLEZ – GAMIFIED
+                            PACK-OPENING
+                            PLATFORM</h3>
+                    </a>
+
+                    <a class="group cursor-pointer w-full md:max-w-[840px] overflow-hidden">
+                        <div class="rounded-xl overflow-hidden mb-4">
+                            <img src="assets/images/service-image-4.png" alt="Blez"
+                                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]">
+                        </div>
+                        <h3 class="text-xs font-bold uppercase tracking-widest">BLEZ – GAMIFIED
+                            PACK-OPENING
+                            PLATFORM</h3>
+                    </a>
+
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+
+
+
+
+
+    <section class="flex items-center justify-center py-[80px] md:py-[120px] px-[10px] md:px-[96px]">
+        <div
+            class="cta-main relative w-full overflow-hidden rounded-xl shadow-2xl flex flex-col items-center justify-center text-center px-6 py-[50px] md:py-[100px]">
+
+            <div class="relative z-10">
+                <h2 class="text-white text-4xl md:text-5xl font-bold tracking-tight mb-4">
+                    Have a Project in Mind?
+                </h2>
+
+                <p class="text-gray-300 text-sm md:text-base max-w-lg mx-auto mb-8 leading-relaxed">
+                    Let’s collaborate to create user experiences that not only look great but also deliver real results.
+                </p>
+
+                <button class="group cursor-pointer relative inline-flex items-center gap-2 px-8 py-3 rounded-full text-xs font-semibold text-white uppercase tracking-widest transition-all
+                     bg-gradient-to-r from-[#6366f1] to-[#a855f7]">
+                    Start a Project
+                    <svg xmlns="assets/images/vector.svg" class="h-4 w-4 transition-transform group-hover:translate-x-1"
+                        fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer
+        class="w-full bg-[#050505] text-[#e5e5e5] pt-16 pb-10 px-6 md:px-12 lg:px-24 bg-gradient-to-t from-[#2a050c] via-[#050505] to-[#050505]">
+
+        <div class="mx-auto">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-y-12 gap-x-8 items-start">
+
+                <div class="col-span-2 md:col-span-1">
+                    <h2 class="text-4xl font-bold tracking-tight mb-4 text-white uppercase">JOY SAHA</h2>
+                    <p class="text-white text-[16px] leading-relaxed mb-6">
+                        I craft intuitive digital experiences with a focus on usability and detail.
+                    </p>
+                    <div class="flex gap-3">
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-[#1a1a1a] flex items-center justify-center border border-white/5 hover:bg-[#252525] transition-all">
+                            <img src="assets/images/footer-icon1.svg" alt="Social Media">
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-[#1a1a1a] flex items-center justify-center border border-white/5 hover:bg-[#252525] transition-all">
+                            <img src="assets/images/footer-icon2.svg" alt="Social Media">
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-[#1a1a1a] flex items-center justify-center border border-white/5 hover:bg-[#252525] transition-all">
+                            <img src="assets/images/footer-icon3.svg" alt="Social Media">
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-[#1a1a1a] flex items-center justify-center border border-white/5 hover:bg-[#252525] transition-all">
+                            <img src="assets/images/footer-icon4.svg" alt="Social Media">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-span-1">
+                    <h3 class="text-[20px] font-bold uppercase tracking-[0.2em] mb-6 text-white">Services</h3>
+                    <ul class="space-y-3 text-[16px] text-[#a1a1a1]">
+                        <li><a href="#" class="hover:text-white transition-colors">UI Design</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">UX Research</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Motion Design</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Brand Strategy</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Art Direction</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-span-1">
+                    <h3 class="text-[20px] font-bold uppercase tracking-[0.2em] mb-6 text-white">Connect</h3>
+                    <ul class="space-y-3 text-[16px] text-[#a1a1a1]">
+                        <li><a href="#" class="hover:text-white transition-colors">LinkedIn</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Dribbble</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Behance</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Instagram</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Twitter</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-span-2 md:col-span-1">
+                    <h3 class="text-[20px] font-bold uppercase tracking-[0.2em] mb-6 text-white">Contact</h3>
+                    <ul class="space-y-4 text-[16px] text-[#a1a1a1]">
+                        <li><a href="mailto:hello@sharifahammed.com"
+                                class="hover:text-white transition-colors">hello@sharifahammed.com</a></li>
+                        <li><a href="tel:+15551234567" class="hover:text-white transition-colors">+1 (555) 123-4567</a>
+                        </li>
+                        <li class="pt-2">Brooklyn, NY</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="mt-24 pt-8 border-t border-white/5 flex justify-center">
+                <p class="text-[16px] text-offwhite tracking-wide uppercase">
+                    © 2026 All Rights Reserved
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
+
+    <script>
+        // Hamburger toggle
+        const hamburger = document.getElementById("hamburger");
+        const mobileMenu = document.getElementById("mobile-menu");
+        const ham1 = document.getElementById("ham1");
+        const ham2 = document.getElementById("ham2");
+        const ham3 = document.getElementById("ham3");
+
+        hamburger.addEventListener("click", () => {
+            const isOpen = !mobileMenu.classList.contains("hidden");
+            if (isOpen) {
+                mobileMenu.classList.add("hidden");
+                mobileMenu.classList.remove("flex");
+                ham1.style.transform = "";
+                ham2.style.opacity = "";
+                ham3.style.transform = "";
+                ham3.style.width = "1rem";
+            } else {
+                mobileMenu.classList.remove("hidden");
+                mobileMenu.classList.add("flex");
+                ham1.style.transform = "translateY(6.5px) rotate(45deg)";
+                ham2.style.opacity = "0";
+                ham3.style.transform = "translateY(-6.5px) rotate(-45deg)";
+                ham3.style.width = "1.5rem";
+            }
+        });
+    </script>
+    <!-- <script src="assets/js/script.js"></script> -->
+</body>
+
+</html>
