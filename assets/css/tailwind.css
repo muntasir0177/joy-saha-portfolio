@@ -1,36 +1,27 @@
-
 @import "tailwindcss";
-
-
-
-
-
-
 
 .hero {
     /* background: black; */
-    background: radial-gradient(ellipse 65% 90% at 70% 50%, #94071a 0%, #3a0a2a 40%, #0d0d0d 80%);
-}
-.hero .person-image {
-    -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%); 
-    mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
-}
-
-.selected-works-bg {
-    background: url('../images/selected-works-bg.png');
+    background: url("../images/banner-bg.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
+.selected-works-bg {
+    background: url("../images/selected-works-bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
 /* Global Splide fix */
-  .splide__list {
+.splide__list {
     display: flex !important;
-  }
-  
-  /* Testimonial Pagination (Scope to the container) */
-  #testimonial-carousel .splide__pagination__page {
+}
+
+/* Testimonial Pagination (Scope to the container) */
+#testimonial-carousel .splide__pagination__page {
     height: 8px !important;
     width: 8px !important;
     background: rgba(255, 255, 255, 0.2) !important;
@@ -38,37 +29,37 @@
     border: none !important;
     margin: 0 6px !important;
     transition: all 0.3s ease !important;
-  }
+}
 
-  #testimonial-carousel .splide__pagination__page.is-active {
+#testimonial-carousel .splide__pagination__page.is-active {
     width: 40px !important;
     background: white !important;
-  }
+}
 
-  /* About Me Carousel ONLY - Forces 180px */
-  #about-carousel .splide__slide {
+/* About Me Carousel ONLY - Forces 180px */
+#about-carousel .splide__slide {
     width: 348px !important;
     transition: opacity 0.3s ease;
-  }
+}
 
-  #about-carousel .splide__slide img {
+#about-carousel .splide__slide img {
     width: 348px !important;
     height: auto;
     border-radius: 1.5rem;
     object-fit: cover;
-  }
+}
 
-  .cta-main {
-    background: url('../images/CTA1.jpg');
+.cta-main {
+    background: url("../images/CTA1.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-  }
+}
 
-  footer{
-    background: url('../images/footer-bg.png');
+footer {
+    background: url("../images/footer-bg.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-  }
+}
