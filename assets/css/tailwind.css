@@ -72,3 +72,7 @@ footer {
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
+
+.splide__pagination button {
+    opacity: 1;
+}
