@@ -1,0 +1,691 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Joy Saha – Portfolio</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Barlow:wght@400;500;600&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
+
+</head>
+
+<body class="bg-[#FAFAFA]">
+
+    <nav id="navbar"
+        class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 md:px-10 py-5 bg-white">
+        <!-- Logo + Menu -->
+        <div class="flex items-center gap-16">
+            <!-- Logo -->
+            <a href="index.html" class="flex items-center gap-3 shrink-0">
+                <img src="assets/images/Logo-Image.png" alt="Joy Saha" class="w-10 h-10 rounded-full object-cover" />
+                <span class="text-[17px] font-semibold text-black uppercase tracking-widest">Joy Saha</span>
+            </a>
+            <!-- Menu -->
+            <ul class="hidden md:flex items-center gap-8 list-none ml-10">
+                <li>
+                    <a href="index.html"
+                        class="text-[15px] font-medium text-black hover:bg-[#7E5EFF] hover:text-white px-5 py-2 rounded-full">Home</a>
+                </li>
+                <li>
+                    <a href="case-study.html"
+                        class="text-[15px] font-medium text-black hover:bg-[#7E5EFF] hover:text-white px-5 py-2 rounded-full">Case
+                        Studies</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- RIGHT SIDE -->
+        <a href="#"
+            class="hidden md:block text-[14px] font-medium text-black hover:text-[#7E5EFF] uppercase tracking-widest underline underline-offset-4">
+            Download CV
+        </a>
+
+        <!-- Hamburger (mobile) -->
+        <button id="hamburger"
+            class="md:hidden flex flex-col justify-center items-center gap-[5px] w-8 h-8 focus:outline-none"
+            aria-label="Toggle menu">
+            <span id="ham1" class="block w-6 h-[1.5px] bg-black transition-all duration-300"></span>
+            <span id="ham2" class="block w-6 h-[1.5px] bg-black transition-all duration-300"></span>
+            <span id="ham3" class="block w-4 h-[1.5px] bg-black transition-all duration-300"></span>
+        </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu"
+        class="hidden md:hidden fixed top-[70px] left-0 right-0 z-40 bg-gradient-to-r from-[#010101] to-[#830A65] backdrop-blur-xl border-t border-white/10 flex-col gap-5 px-10 py-7 z-50">
+        <a href="index.html"
+            class="text-xl font-medium text-[#c8c9d4] hover:text-white tracking-wide transition-colors duration-200">Home</a>
+        <a href="case-study.html"
+            class="text-xl font-medium text-[#c8c9d4] hover:text-white tracking-wide transition-colors duration-200">Case
+            Studies</a>
+        <a href="#"
+            class="text-xl font-medium text-[#c8c9d4] hover:text-white tracking-wide transition-colors duration-200">Download
+            CV</a>
+    </div>
+
+
+    <!-- <section class="px-6 md:px-10 lg:px-16">
+        <div class="pt-25">
+
+            <h1 class="text-[32px] md:text-[38px] font-bold text-black pb-6 border-b border-gray-200 tracking-tight">
+                Pixelcraft | Fashion eCommerce Clothing Website
+            </h1>
+
+            <div class="mt-6">
+                <p class="text-[16px] md:text-[18px] text-gray-500 leading-relaxed max-w-5xl">
+                    Pixelcraft is an e-commerce website concept, designed for fashion shoppers. Pixelcraft is an
+                    e-commerce website concept, design.
+                </p>
+            </div>
+
+            <div class="flex flex-wrap gap-3 mt-6">
+                <span class="px-4 py-2 border border-gray-300 rounded text-[12px] text-gray-600 font-medium">UX
+                    Design</span>
+                <span class="px-4 py-2 border border-gray-300 rounded text-[12px] text-gray-600 font-medium">UI
+                    Design</span>
+                <span class="px-4 py-2 border border-gray-300 rounded text-[12px] text-gray-600 font-medium">Saas
+                    Application</span>
+                <span class="px-4 py-2 border border-gray-300 rounded text-[12px] text-gray-600 font-medium">Web
+                    App</span>
+                <span class="px-4 py-2 border border-gray-300 rounded text-[12px] text-gray-600 font-medium">Dashboard
+                    Design</span>
+            </div>
+
+            <div class="mt-6">
+                <p class="text-[13px] font-semibold text-gray-400 uppercase tracking-widest">
+                    2 JAN, 2026
+                </p>
+            </div>
+
+        </div>
+    </section> -->
+
+    <section class="px-6 md:px-10 lg:px-16">
+        <div class="my-[24px] md:my-[64px] pt-16 md:pt-2">
+            <div class="relative w-full overflow-hidden">
+                <img src="assets/images/main-image.png" alt="Pixelcraft Project Mockup"
+                    class="w-full h-auto block object-cover" />
+            </div>
+        </div>
+    </section>
+
+
+    <section class="px-6 md:px-10 lg:px-16 text-black my-[24px] md:my-[64px]">
+
+        <p class="text-[14px] md:text-[24px] text-[#1A1A1A] font-medium tracking-tight leading-tight mb-[40px]">
+            What is this <span class="font-bold">Hungry Night</span>
+        </p>
+
+        <div class="mb-[40px]">
+            <h2 class="text-[40px] md:text-[56px] leading-[1.1] tracking-tight text-[#A1A1A1] font-normal mb-[40px]">
+                Hungry Night is a <span class="text-black font-bold">fast and simple food delivery platform
+                    designed</span> for easy restaurant discovery and quick ordering.
+            </h2>
+        </div>
+
+        <div class="flex items-center gap-4 mb-[40px]">
+            <img src="assets/images/ellipse-15.png" alt="Carter Levin" class="h-12 w-12 rounded-full object-cover" />
+            <div class="flex flex-col justify-center">
+                <h4 class="text-[16px] md:text-[24px] font-bold text-black leading-tight">Carter Levin</h4>
+                <p class="text-[14px] md:text-[16px] text-[#666666] leading-tight">Marketing Manager</p>
+            </div>
+        </div>
+
+        <div class="border-t border-[#E5E5E5] mb-[40px]">
+            <h3 class="text-[24px] md:text-[32px] font-bold text-black mb-4">Overview</h3>
+            <p class="text-[24px] md:text-[32px] text-[#666666] leading-[40px]">
+                Hungry Night is a food delivery platform that helps users discover nearby restaurants and order food
+                quickly through a clean, simple, and user-friendly interface.
+            </p>
+        </div>
+
+        <div class="pb-10 grid grid-cols-1 md:grid-cols-4">
+
+            <div class="flex items-end justify-between border-b border-[#E5E5E5] pb-[24px] md:pr-8">
+                <p class="text-[14px] text-[#999999]">Project name</p>
+                <p class="text-[14px] font-medium text-black">Hungry Night</p>
+            </div>
+
+            <div
+                class="flex items-end justify-between border-b border-[#E5E5E5] pb-[24px] border-l-0 md:border-l border-[#E5E5E5] md:px-8">
+
+                <p class="text-[14px] text-[#999999] mt-6 md:mt-0">Location</p>
+                <p class="text-[14px] font-medium text-black">United Kingdom</p>
+            </div>
+
+            <div
+                class="flex items-end justify-between border-b border-[#E5E5E5] pb-[24px] border-l-0 md:border-l border-[#E5E5E5] md:px-8 max-md:mt-6">
+                <p class="text-[14px] text-[#999999]">Categoty</p>
+                <p class="text-[14px] font-medium text-black">Food Delivery</p>
+            </div>
+
+            <div
+                class="flex items-end justify-between border-b border-[#E5E5E5] pb-[24px] border-l-0 md:border-l border-[#E5E5E5] md:pl-8 max-md:mt-6">
+                <p class="text-[14px] text-[#999999]">Year</p>
+                <p class="text-[14px] font-medium text-black">2026</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="px-6 md:px-10 lg:px-16">
+        <div class="my-[24px] md:my-[64px]">
+            <div class="relative w-full overflow-hidden">
+                <img src="assets/images/details2.png" alt="Pixelcraft Project Mockup"
+                    class="w-full h-auto block object-cover aspect-1728/1102" />
+            </div>
+        </div>
+    </section>
+
+    <section class="px-6 md:px-10 lg:px-16">
+        <div class="my-[24px] md:my-[64px]">
+            <div class="relative w-full overflow-hidden">
+                <img src="assets/images/details3.png" alt="Pixelcraft Project Mockup"
+                    class="w-full h-auto block object-cover" />
+            </div>
+        </div>
+    </section>
+
+    <section class="px-0 md:px-10 lg:px-16 pb-4 md:pb-0 bg-black md:bg-white">
+        <div class="overflow-hidden my-[64px]">
+            <div class="grid grid-cols-1 md:grid-cols-2">
+
+                <div class="details-content1 py-[55px] px-[16px] md:p-12 lg:p-20 flex flex-col justify-center">
+                    <span class="text-[#FF0F0F] font-medium text-[24px] mb-2">Problems</span>
+                    <h2 class="text-white text-[24px] md:text-[40px] font-bold mb-6">User Pain Points</h2>
+                    <div class="w-full h-[1px] bg-white/10 mb-8"></div>
+
+                    <ul class="space-y-5">
+                        <li class="flex items-center gap-4">
+                            <img src="assets/images/group.svg" alt="problem icon" class="w-5 h-5 flex-shrink-0">
+                            <p class="text-gray-300 text-[22px] md:text-[22px]">Finding the right food takes too much
+                                time</p>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <img src="assets/images/group.svg" alt="problem icon" class="w-5 h-5 flex-shrink-0">
+                            <p class="text-gray-300 text-[22px] md:text-[22px]">Cluttered home screens confuse users</p>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <img src="assets/images/group.svg" alt="problem icon" class="w-5 h-5 flex-shrink-0">
+                            <p class="text-gray-300 text-[22px] md:text-[22px]">Offers and discounts are hard to notice
+                            </p>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <img src="assets/images/group.svg" alt="problem icon" class="w-5 h-5 flex-shrink-0">
+                            <p class="text-gray-300 text-[22px] md:text-[22px]">Checkout has too many steps</p>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <img src="assets/images/group.svg" alt="problem icon" class="w-5 h-5 flex-shrink-0">
+                            <p class="text-gray-300 text-[22px] md:text-[22px]">Lack of real-time order tracking reduces
+                                trust
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="overflow-hidden px-[16px] md:px-0">
+                    <img src="assets/images/details4.png" alt="Delivery person" class="w-full h-full object-cover">
+                </div>
+
+                <div class="order-last md:order-none overflow-hidden px-[16px] md:px-0">
+                    <img src="assets/images/details5.png" alt="Customer receiving food"
+                        class="w-full h-full object-cover">
+                </div>
+
+                <div class="details-content2 bg-black p-8 md:p-12 lg:p-20 flex flex-col justify-center">
+                    <span class="text-[#27AE60] font-medium text-sm mb-2">Solutions</span>
+                    <h2 class="text-white text-3xl md:text-4xl font-bold mb-6">User Pain Points</h2>
+                    <div class="w-full h-[1px] bg-white/10 mb-8"></div>
+
+                    <ul class="space-y-5">
+                        <li class="flex items-center gap-4">
+                            <img src="assets/images/fi_12503776.svg" alt="solution icon" class="w-5 h-5 flex-shrink-0">
+                            <p class="text-gray-300 text-[22px] md:text-[22px]">Quick search and clear food categories
+                            </p>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <img src="assets/images/fi_12503776.svg" alt="solution icon" class="w-5 h-5 flex-shrink-0">
+                            <p class="text-gray-300 text-[22px] md:text-[22px]">Clean layout with strong visual
+                                hierarchy</p>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <img src="assets/images/fi_12503776.svg" alt="solution icon" class="w-5 h-5 flex-shrink-0">
+                            <p class="text-gray-300 text-[22px] md:text-[22px]">Highlighted offers and promo cards</p>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <img src="assets/images/fi_12503776.svg" alt="solution icon" class="w-5 h-5 flex-shrink-0">
+                            <p class="text-gray-300 text-[22px] md:text-[22px]">Simplified checkout with fewer steps</p>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <img src="assets/images/fi_12503776.svg" alt="solution icon" class="w-5 h-5 flex-shrink-0">
+                            <p class="text-gray-300 text-[22px] md:text-[22px]">Real-time order tracking with clear
+                                updates
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class="px-6 md:px-10 lg:px-16">
+        <div class="my-[24px] md:my-[64px]">
+            <div class="relative w-full overflow-hidden">
+                <img src="assets/images/problems-container.png" alt="Pixelcraft Project Mockup"
+                    class="w-full h-auto block object-cover" />
+            </div>
+        </div>
+    </section> -->
+
+    <section class="px-6 md:px-10 lg:px-16">
+        <div class="my-[24px] md:my-[64px]">
+            <div class="relative w-full overflow-hidden">
+                <img src="assets/images/details6.png" alt="Pixelcraft Project Mockup"
+                    class="w-full h-auto block object-cover" />
+            </div>
+        </div>
+    </section>
+
+
+    <section class="px-6 md:px-10 lg:px-16">
+        <div class="my-[24px] md:my-[64px]">
+            <h2 class="text-3xl font-semibold text-[#1a1a1a] mb-10">The Design Journey</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 bg-[#FFF] md:p-6">
+
+                <div
+                    class="flex flex-col h-full p-6 md:p-8 rounded-sm bg-gradient-to-b from-[#3d0a11] to-black text-white">
+                    <div class="mb-6">
+                        <img src="assets/images/fi_3126554.svg" alt="solution icon" class="aspect-48/48 flex-shrink-0">
+                    </div>
+                    <h3 class="text-[20px] md:text-[24px] font-medium leading-tight mb-6">Understanding<br>& Scope
+                        Finding</h3>
+                    <hr class="border-white/40 mb-6">
+
+                    <ul class="space-y-4 mb-10 flex-grow">
+                        <li class="flex items-center gap-4">
+                            <img src="assets/images/right-icon.svg" alt="problem icon"
+                                class="aspect-32/32 flex-shrink-0">
+                            <p class="text-gray-300 text-[22px] md:text-[22px]">Carried out in-depth</p>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <img src="assets/images/right-icon.svg" alt="problem icon"
+                                class="aspect-32/32 flex-shrink-0">
+                            <p class="text-gray-300 text-[22px] md:text-[22px]">analysis of current</p>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <img src="assets/images/right-icon.svg" alt="problem icon"
+                                class="aspect-32/32 flex-shrink-0">
+                            <p class="text-gray-300 text-[22px] md:text-[22px]">surveillance technologies</p>
+                        </li>
+                    </ul>
+                    <hr class="border-white/40 mb-6">
+
+                    <div class="flex flex-wrap gap-2">
+                        <span
+                            class="px-3 py-1.5 border border-white bg-white/24 text-[14px] text-gray-300 uppercase tracking-widest bg-white/5">UX
+                            Design</span>
+                        <span
+                            class="px-3 py-1.5 border border-white bg-white/24 text-[14px] text-gray-300 uppercase tracking-widest bg-white/5">UI
+                            Design</span>
+                        <span
+                            class="px-3 py-1.5 border border-white bg-white/24 text-[14px] text-gray-300 uppercase tracking-widest bg-white/5">Saas
+                            Application</span>
+                        <span
+                            class="px-3 py-1.5 border border-white bg-white/24 text-[14px] text-gray-300 uppercase tracking-widest bg-white/5">Web
+                            App</span>
+                        <span
+                            class="px-3 py-1.5 border border-white bg-white/24 text-[14px] text-gray-300 uppercase tracking-widest bg-white/5">Dashboard
+                            Design</span>
+                    </div>
+                </div>
+
+                <div
+                    class="flex flex-col h-full p-6 md:p-8 rounded-sm bg-gradient-to-b from-[#3d0a11] to-black text-white">
+                    <div class="mb-6">
+                        <img src="assets/images/fi_5403820.svg" alt="solution icon" class="aspect-48/48 flex-shrink-0">
+                    </div>
+                    <h3 class="text-[20px] md:text-[24px] font-medium leading-tight mb-6">UX Research & <br>Competitive
+                        Analysis</h3>
+                    <hr class="border-white/40 mb-6">
+
+                    <ul class="space-y-4 mb-10 flex-grow">
+                        <li class="flex items-center gap-4">
+                            <img src="assets/images/right-icon.svg" alt="problem icon"
+                                class="aspect-32/32 flex-shrink-0">
+                            <p class="text-gray-300 text-[22px] md:text-[22px]">User research & insights</p>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <img src="assets/images/right-icon.svg" alt="problem icon"
+                                class="aspect-32/32 flex-shrink-0">
+                            <p class="text-gray-300 text-[22px] md:text-[22px]">User flows & journeys</p>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <img src="assets/images/right-icon.svg" alt="problem icon"
+                                class="aspect-32/32 flex-shrink-0">
+                            <p class="text-gray-300 text-[22px] md:text-[22px]">Competitor gap analysis</p>
+                        </li>
+                    </ul>
+                    <hr class="border-white/40 mb-6">
+
+                    <div class="flex flex-wrap gap-2">
+                        <span
+                            class="px-3 py-1.5 border border-white bg-white/24 text-[14px] text-gray-300 uppercase tracking-widest bg-white/5">UX
+                            Research</span>
+                        <span
+                            class="px-3 py-1.5 border border-white bg-white/24 text-[14px] text-gray-300 uppercase tracking-widest bg-white/5">User
+                            Flow</span>
+                        <span
+                            class="px-3 py-1.5 border border-white bg-white/24 text-[14px] text-gray-300 uppercase tracking-widest bg-white/5">Wireframes</span>
+                        <span
+                            class="px-3 py-1.5 border border-white bg-white/24 text-[14px] text-gray-300 uppercase tracking-widest bg-white/5">
+                            Competitor Analysis</span>
+                        <span
+                            class="px-3 py-1.5 border border-white bg-white/24 text-[14px] text-gray-300 uppercase tracking-widest bg-white/5">AI</span>
+                    </div>
+                </div>
+
+                <div
+                    class="flex flex-col h-full p-6 md:p-8 rounded-sm bg-gradient-to-b from-[#3d0a11] to-black text-white">
+                    <div class="mb-6">
+                        <img src="assets/images/fi_2010990.svg" alt="solution icon" class="aspect-48/48 flex-shrink-0">
+                    </div>
+                    <h3 class="text-[20px] md:text-[24px] font-medium leading-tight mb-6">Design & <br>Development</h3>
+                    <hr class="border-white/40 mb-6">
+
+                    <ul class="space-y-4 mb-10 flex-grow">
+                        <li class="flex items-center gap-4">
+                            <img src="assets/images/right-icon.svg" alt="problem icon"
+                                class="aspect-32/32 flex-shrink-0">
+                            <p class="text-gray-300 text-[22px] md:text-[22px]">High-fidelity UI designp>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <img src="assets/images/right-icon.svg" alt="problem icon"
+                                class="aspect-32/32 flex-shrink-0">
+                            <p class="text-gray-300 text-[22px] md:text-[22px]">Interactive prototyping</p>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <img src="assets/images/right-icon.svg" alt="problem icon"
+                                class="aspect-32/32 flex-shrink-0">
+                            <p class="text-gray-300 text-[22px] md:text-[22px]">Dev-ready handoff assets</p>
+                        </li>
+                    </ul>
+                    <hr class="border-white/40 mb-6">
+
+                    <div class="flex flex-wrap gap-2">
+                        <span
+                            class="px-3 py-1.5 border border-white bg-white/24 text-[14px] text-gray-300 uppercase tracking-widest bg-white/5">UI
+                            Design</span>
+                        <span
+                            class="px-3 py-1.5 border border-white bg-white/24 text-[14px] text-gray-300 uppercase tracking-widest bg-white/5">Prototyping</span>
+                        <span
+                            class="px-3 py-1.5 border border-white bg-white/24 text-[14px] text-gray-300 uppercase tracking-widest bg-white/5">Design
+                            System</span>
+                        <span
+                            class="px-3 py-1.5 border border-white bg-white/24 text-[14px] text-gray-300 uppercase tracking-widest bg-white/5">Handoff</span>
+                        <span
+                            class="px-3 py-1.5 border border-white bg-white/24 text-[14px] text-gray-300 uppercase tracking-widest bg-white/5">Responsive
+                            Design</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="px-6 md:px-10 lg:px-16">
+        <div class="my-[24px] md:my-[64px]">
+            <div class="relative w-full overflow-hidden">
+                <img src="assets/images/details7.png" alt="Pixelcraft Project Mockup"
+                    class="w-full h-auto block object-cover" />
+            </div>
+        </div>
+    </section>
+
+    <section class="px-6 md:px-10 lg:px-16">
+        <div class="my-[24px] md:my-[64px]">
+            <div class="relative w-full overflow-hidden">
+                <img src="assets/images/details8.png" alt="Pixelcraft Project Mockup"
+                    class="w-full h-auto block object-cover" />
+            </div>
+        </div>
+    </section>
+
+
+    <section class="px-6 md:px-10 lg:px-16">
+        <div class="my-[24px] md:my-[64px]">
+
+            <div class="mb-[40px]">
+                <h2 class="text-3xl font-semibold text-[#1a1a1a] mb-1">Results & Impact</h2>
+                <p class="text-gray-500 mb-8">Measurable success that exceeded all expectations</p>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 bg-[#FFF] mb-10 px-0 md:p-8">
+                    <div class="bg-[#F5F5F5] p-8 border border-gray-100 shadow-sm">
+                        <div class="text-[48px] font-black text-[#1a1a1a] mb-6 flex">
+                            <span class="counter" data-target="64">0</span>%
+                        </div>
+                        <hr class="border-gray-200 mb-6">
+                        <div class="text-[16px] md:font-bold text-gray-500 uppercase tracking-widest">
+                            Increase in engagement
+                        </div>
+                    </div>
+
+                    <div class="bg-[#F5F5F5] p-8 border border-gray-100 shadow-sm">
+                        <div class="text-[48px] font-black text-[#1a1a1a] mb-6">
+                            <span class="counter" data-target="92">0</span>
+                        </div>
+                        <hr class="border-gray-200 mb-6">
+                        <div class="text-[16px] md:font-bold text-gray-500 uppercase tracking-widest">
+                            Net promoter score
+                        </div>
+                    </div>
+
+                    <div class="bg-[#F5F5F5] p-8 border border-gray-100 shadow-sm">
+                        <div class="text-[48px] font-black text-[#1a1a1a] mb-6 flex">
+                            <span class="counter" data-target="92">0</span>%
+                        </div>
+                        <hr class="border-gray-200 mb-6">
+                        <div class="text-[16px] md:font-bold text-gray-500 uppercase tracking-widest">
+                            User satisfaction
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h2 class="text-3xl font-semibold text-[#1a1a1a] mb-1">Additional Achievements</h2>
+                    <p class="text-gray-500 mb-10">Measurable success that exceeded all expectations</p>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div
+                            class="career-highlights p-8 bg-gradient-to-r from-[#E94A11] to-[#830A65] text-white rounded-sm">
+                            <div class="mb-6">
+                                <img src="assets/images/fi_9401938.svg" alt="Career Highlights icon"
+                                    class="aspect-40/40 flex-shrink-0">
+                            </div>
+                            <h3 class="text-[24px] font-bold mb-2">Career Highlights</h3>
+                            <p class="text-gray-400 text-[24px] leading-relaxed">Earned the 2024 Excellence in Mobile
+                                App
+                                Design
+                                Award for Healthcare Solutions</p>
+                        </div>
+
+                        <div
+                            class="notable-achievements p-8 bg-gradient-to-r from-[#3d0a11] to-black text-white rounded-sm">
+                            <div class="mb-6">
+                                <img src="assets/images/fi_6060564.svg" alt="Notable Achievements icon"
+                                    class="aspect-40/40 flex-shrink-0">
+                            </div>
+                            <h3 class="text-[24px] font-bold mb-2">Notable Achievements</h3>
+                            <p class="text-gray-400 text-[24px] leading-relaxed">Awarded the 2023 Best User Experience
+                                in
+                                E-commerce Design</p>
+                        </div>
+
+                        <div class="distinctions p-8 bg-gradient-to-r from-[#3d0a11] to-black text-white rounded-sm">
+                            <div class="mb-6">
+                                <img src="assets/images/fi_2152656.svg" alt="Distinctions icon"
+                                    class="aspect-40/40 flex-shrink-0">
+                            </div>
+                            <h3 class="text-[24px] font-bold mb-2">Distinctions</h3>
+                            <p class="text-gray-400 text-[24px] leading-relaxed">Recognized with the 2022 Outstanding UI
+                                Design
+                                Trophy in Financial Services</p>
+                        </div>
+
+                        <div class="honors p-8 bg-gradient-to-r from-[#3d0a11] to-black text-white rounded-sm">
+                            <div class="mb-6">
+                                <img src="assets/images/fi_7118029.svg" alt="Honors icon"
+                                    class="aspect-40/40 flex-shrink-0">
+                            </div>
+                            <h3 class="text-[24px] font-bold mb-2">Honors</h3>
+                            <p class="text-gray-400 text-[24px] leading-relaxed">Winner of the 2021 Creative Digital
+                                Experience
+                                Award for Education Platforms</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+    </section>
+
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h2 class="footer-logo">JOY SAHA</h2>
+                    <p class="footer-description">
+                        I craft intuitive digital experiences with a focus on usability and detail.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon">
+                            <img src="assets/images/footer-icon1.svg" alt="Social Media">
+                        </a>
+                        <a href="#" class="social-icon">
+                            <img src="assets/images/footer-icon.svg" alt="Social Media">
+                        </a>
+                        <a href="#" class="social-icon">
+                            <img src="assets/images/footer-icon3.svg" alt="Social Media">
+                        </a>
+                        <a href="#" class="social-icon">
+                            <img src="assets/images/footer-icon4.svg" alt="Social Media">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="column-title">Services</h3>
+                    <ul class="column-list">
+                        <li><a href="#">UI Design</a></li>
+                        <li><a href="#">UX Research</a></li>
+                        <li><a href="#">Motion Design</a></li>
+                        <li><a href="#">Brand Strategy</a></li>
+                        <li><a href="#">Art Direction</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="column-title">Connect</h3>
+                    <ul class="column-list">
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">Dribbble</a></li>
+                        <li><a href="#">Behance</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Twitter</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column footer-contact">
+                    <h3 class="column-title">Contact</h3>
+                    <ul class="column-list contact-list">
+                        <li><a href="mailto:hello@sharifahammed.com">hello@sharifahammed.com</a></li>
+                        <li><a href="tel:+15551234567">+1 (555) 123-4567</a></li>
+                        <li class="location">Brooklyn, NY</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="copyright-text">© 2026 All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
+
+    <script>
+        // Hamburger toggle
+        const hamburger = document.getElementById("hamburger");
+        const mobileMenu = document.getElementById("mobile-menu");
+        const ham1 = document.getElementById("ham1");
+        const ham2 = document.getElementById("ham2");
+        const ham3 = document.getElementById("ham3");
+
+        hamburger.addEventListener("click", () => {
+            const isOpen = !mobileMenu.classList.contains("hidden");
+            if (isOpen) {
+                mobileMenu.classList.add("hidden");
+                mobileMenu.classList.remove("flex");
+                ham1.style.transform = "";
+                ham2.style.opacity = "";
+                ham3.style.transform = "";
+                ham3.style.width = "1rem";
+            } else {
+                mobileMenu.classList.remove("hidden");
+                mobileMenu.classList.add("flex");
+                ham1.style.transform = "translateY(6.5px) rotate(45deg)";
+                ham2.style.opacity = "0";
+                ham3.style.transform = "translateY(-6.5px) rotate(-45deg)";
+                ham3.style.width = "1.5rem";
+            }
+        });
+
+
+        const counters = document.querySelectorAll('.counter');
+        const speed = 100; // The lower the slower
+
+        const startCounter = (entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const counter = entry.target;
+                    const updateCount = () => {
+                        const target = +counter.getAttribute('data-target');
+                        const count = +counter.innerText;
+
+                        // Lower inc means smoother and slower animation
+                        const inc = target / speed;
+
+                        if (count < target) {
+                            counter.innerText = Math.ceil(count + inc);
+                            setTimeout(updateCount, 20);
+                        } else {
+                            counter.innerText = target;
+                        }
+                    };
+                    updateCount();
+                    observer.unobserve(counter); // Stops observing once animation is done
+                }
+            });
+        };
+
+        const observer = new IntersectionObserver(startCounter, {
+            threshold: 0.5 // Starts when 50% of the element is visible
+        });
+
+        counters.forEach(counter => observer.observe(counter));
+
+    </script>
+</body>
+
+</html>

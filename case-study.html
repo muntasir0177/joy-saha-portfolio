@@ -72,7 +72,7 @@
 
 
 
-    <section class="bg-white py-[80px] py-0 md:py-12 lg:py-16 lg:mb-0">
+    <section class="bg-white py-[80px] md:py-0 lg:py-0 lg:mb-0">
         <div class="mx-auto pt-12 md:pt-18 text-center">
 
             <div class="text-center mb-16 px-4">
@@ -88,27 +88,22 @@
 
                 <div class="flex justify-center w-full">
                     <div class="flex items-center gap-4 overflow-x-auto pb-4 scrollbar-hide whitespace-nowrap">
+                        <a href="#" data-filter="all"
+                            class="filter-btn active px-3 md:px-5 py-1.5 md:py-2.5 text-[12px] md:text-[15px] font-medium rounded-full text-white bg-[#7E5EFF]">All</a>
 
-                        <a href="#"
-                            class="px-3 md:px-5 py-1.5 md:py-2.5 text-[12px] md:text-[15px] font-medium rounded-full text-[#555555] bg-[#F3F4F4] hover:bg-[#7E5EFF] hover:text-white border border-transparent">
-                            Dashboard
-                        </a>
+                        <a href="#" data-filter="dashboard"
+                            class="filter-btn px-3 md:px-5 py-1.5 md:py-2.5 text-[12px] md:text-[15px] font-medium rounded-full text-[#555555] bg-[#F3F4F4] hover:bg-[#7E5EFF] hover:text-white border border-transparent">Dashboard</a>
 
-                        <a href="#"
-                            class="px-3 md:px-5 py-1.5 md:py-2.5 text-[12px] md:text-[15px] font-medium rounded-full text-[#555555] bg-[#F3F4F4] hover:bg-[#7E5EFF] transition-all border border-transparent">
-                            SaaS
-                        </a>
+                        <a href="#" data-filter="saas"
+                            class="filter-btn px-3 md:px-5 py-1.5 md:py-2.5 text-[12px] md:text-[15px] font-medium rounded-full text-[#555555] bg-[#F3F4F4] hover:bg-[#7E5EFF] hover:text-white transition-all border border-transparent">SaaS</a>
 
-                        <a href="#"
-                            class="px-3 md:px-5 py-1.5 md:py-2.5 text-[12px] md:text-[15px] font-medium rounded-full text-[#555555] bg-[#F3F4F4] hover:bg-[#7E5EFF] transition-all border border-transparent">
-                            Mobile Apps
-                        </a>
+                        <a href="#" data-filter="mobile"
+                            class="filter-btn px-3 md:px-5 py-1.5 md:py-2.5 text-[12px] md:text-[15px] font-medium rounded-full text-[#555555] bg-[#F3F4F4] hover:bg-[#7E5EFF] hover:text-white transition-all border border-transparent">Mobile
+                            Apps</a>
 
-                        <a href="#"
-                            class="px-3 md:px-5 py-1.5 md:py-2.5 text-[12px] md:text-[15px] font-medium rounded-full text-[#555555] bg-[#F3F4F4] hover:bg-[#7E5EFF] transition-all border border-transparent">
-                            Web Apps
-                        </a>
-
+                        <a href="#" data-filter="web"
+                            class="filter-btn px-3 md:px-5 py-1.5 md:py-2.5 text-[12px] md:text-[15px] font-medium rounded-full text-[#555555] bg-[#F3F4F4] hover:bg-[#7E5EFF] hover:text-white transition-all border border-transparent">Web
+                            Apps</a>
                     </div>
                 </div>
             </div>
@@ -117,46 +112,42 @@
             <div class="w-full p-[10px] md:p-16 border border-white/5">
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <a class="group cursor-pointer max-w-[840px] overflow-hidden">
+                    <a href="case-study-details.html" data-category="dashboard"
+                        class="project-item group cursor-pointer max-w-[840px] overflow-hidden">
                         <div class="rounded-xl overflow-hidden mb-4">
                             <img src="assets/images/service-image-1.png" alt="Blez"
                                 class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]">
                         </div>
-                        <h3 class="text-xs font-bold uppercase tracking-widest">BLEZ – GAMIFIED
-                            PACK-OPENING
-                            PLATFORM</h3>
+                        <h3 class="text-xs font-bold uppercase tracking-widest">BLEZ – GAMIFIED PACK-OPENING PLATFORM
+                        </h3>
                     </a>
 
-                    <a class="group cursor-pointer max-w-[840px] overflow-hidden">
+                    <a href="case-study-details.html" data-category="web"
+                        class="project-item group cursor-pointer max-w-[840px] overflow-hidden">
                         <div class="rounded-xl overflow-hidden mb-4">
                             <img src="assets/images/service-image-2.png" alt="Blez"
                                 class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]">
                         </div>
-                        <h3 class="text-xs font-bold uppercase tracking-widest">BLEZ – GAMIFIED
-                            PACK-OPENING
-                            PLATFORM</h3>
+                        <h3 class="text-xs font-bold uppercase tracking-widest">REAL ESTATE WEB APP DESIGN</h3>
                     </a>
 
-                    <a class="group cursor-pointer max-w-[840px] overflow-hidden">
+                    <a href="case-study-details.html" data-category="mobile"
+                        class="project-item group cursor-pointer max-w-[840px] overflow-hidden">
                         <div class="rounded-xl overflow-hidden mb-4">
                             <img src="assets/images/service-image-3.png" alt="Blez"
                                 class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]">
                         </div>
-                        <h3 class="text-xs font-bold uppercase tracking-widest">BLEZ – GAMIFIED
-                            PACK-OPENING
-                            PLATFORM</h3>
+                        <h3 class="text-xs font-bold uppercase tracking-widest">FITNESS MOBILE APP | UI/UX DESIGN</h3>
                     </a>
 
-                    <a class="group cursor-pointer w-full md:max-w-[840px] overflow-hidden">
+                    <a href="case-study-details.html" data-category="saas"
+                        class="project-item group cursor-pointer w-full md:max-w-[840px] overflow-hidden">
                         <div class="rounded-xl overflow-hidden mb-4">
                             <img src="assets/images/service-image-4.png" alt="Blez"
                                 class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]">
                         </div>
-                        <h3 class="text-xs font-bold uppercase tracking-widest">BLEZ – GAMIFIED
-                            PACK-OPENING
-                            PLATFORM</h3>
+                        <h3 class="text-xs font-bold uppercase tracking-widest">HOLI – TRAVEL MOBILE APP</h3>
                     </a>
-
                 </div>
             </div>
 
@@ -197,76 +188,64 @@
 
 
 
-    <footer
-        class="w-full bg-[#050505] text-[#e5e5e5] pt-16 pb-10 px-6 md:px-12 lg:px-24 bg-gradient-to-t from-[#2a050c] via-[#050505] to-[#050505]">
-
-        <div class="mx-auto">
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-y-12 gap-x-8 items-start">
-
-                <div class="col-span-2 md:col-span-1">
-                    <h2 class="text-4xl font-bold tracking-tight mb-4 text-white uppercase">JOY SAHA</h2>
-                    <p class="text-white text-[16px] leading-relaxed mb-6">
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h2 class="footer-logo">JOY SAHA</h2>
+                    <p class="footer-description">
                         I craft intuitive digital experiences with a focus on usability and detail.
                     </p>
-                    <div class="flex gap-3">
-                        <a href="#"
-                            class="w-10 h-10 rounded-full bg-[#1a1a1a] flex items-center justify-center border border-white/5 hover:bg-[#252525] transition-all">
+                    <div class="social-links">
+                        <a href="#" class="social-icon">
                             <img src="assets/images/footer-icon1.svg" alt="Social Media">
                         </a>
-                        <a href="#"
-                            class="w-10 h-10 rounded-full bg-[#1a1a1a] flex items-center justify-center border border-white/5 hover:bg-[#252525] transition-all">
+                        <a href="#" class="social-icon">
                             <img src="assets/images/footer-icon.svg" alt="Social Media">
                         </a>
-                        <a href="#"
-                            class="w-10 h-10 rounded-full bg-[#1a1a1a] flex items-center justify-center border border-white/5 hover:bg-[#252525] transition-all">
+                        <a href="#" class="social-icon">
                             <img src="assets/images/footer-icon3.svg" alt="Social Media">
                         </a>
-                        <a href="#"
-                            class="w-10 h-10 rounded-full bg-[#1a1a1a] flex items-center justify-center border border-white/5 hover:bg-[#252525] transition-all">
+                        <a href="#" class="social-icon">
                             <img src="assets/images/footer-icon4.svg" alt="Social Media">
                         </a>
                     </div>
                 </div>
 
-                <div class="col-span-1">
-                    <h3 class="text-[20px] font-bold uppercase tracking-[0.2em] mb-6 text-white">Services</h3>
-                    <ul class="space-y-3 text-[16px] text-[#a1a1a1]">
-                        <li><a href="#" class="hover:text-white transition-colors">UI Design</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">UX Research</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Motion Design</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Brand Strategy</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Art Direction</a></li>
+                <div class="footer-column">
+                    <h3 class="column-title">Services</h3>
+                    <ul class="column-list">
+                        <li><a href="#">UI Design</a></li>
+                        <li><a href="#">UX Research</a></li>
+                        <li><a href="#">Motion Design</a></li>
+                        <li><a href="#">Brand Strategy</a></li>
+                        <li><a href="#">Art Direction</a></li>
                     </ul>
                 </div>
 
-                <div class="col-span-1">
-                    <h3 class="text-[20px] font-bold uppercase tracking-[0.2em] mb-6 text-white">Connect</h3>
-                    <ul class="space-y-3 text-[16px] text-[#a1a1a1]">
-                        <li><a href="#" class="hover:text-white transition-colors">LinkedIn</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Dribbble</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Behance</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Instagram</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Twitter</a></li>
+                <div class="footer-column">
+                    <h3 class="column-title">Connect</h3>
+                    <ul class="column-list">
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">Dribbble</a></li>
+                        <li><a href="#">Behance</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Twitter</a></li>
                     </ul>
                 </div>
 
-                <div class="col-span-2 md:col-span-1">
-                    <h3 class="text-[20px] font-bold uppercase tracking-[0.2em] mb-6 text-white">Contact</h3>
-                    <ul class="space-y-4 text-[16px] text-[#a1a1a1]">
-                        <li><a href="mailto:hello@sharifahammed.com"
-                                class="hover:text-white transition-colors">hello@sharifahammed.com</a></li>
-                        <li><a href="tel:+15551234567" class="hover:text-white transition-colors">+1 (555) 123-4567</a>
-                        </li>
-                        <li class="pt-2">Brooklyn, NY</li>
+                <div class="footer-column footer-contact">
+                    <h3 class="column-title">Contact</h3>
+                    <ul class="column-list contact-list">
+                        <li><a href="mailto:hello@sharifahammed.com">hello@sharifahammed.com</a></li>
+                        <li><a href="tel:+15551234567">+1 (555) 123-4567</a></li>
+                        <li class="location">Brooklyn, NY</li>
                     </ul>
                 </div>
-
             </div>
 
-            <div class="mt-24 pt-8 border-t border-white/10 flex justify-center">
-                <p class="text-[16px] text-offwhite tracking-wide uppercase">
-                    © 2026 All Rights Reserved
-                </p>
+            <div class="footer-bottom">
+                <p class="copyright-text">© 2026 All Rights Reserved</p>
             </div>
         </div>
     </footer>
@@ -301,6 +280,47 @@
                 ham3.style.transform = "translateY(-6.5px) rotate(-45deg)";
                 ham3.style.width = "1.5rem";
             }
+        });
+
+        // Make sure this runs after the DOM is loaded
+        document.addEventListener('DOMContentLoaded', () => {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const projectItems = document.querySelectorAll('.project-item');
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', (e) => {
+                    e.preventDefault();
+
+                    // 1. Handle Active Button UI
+                    filterButtons.forEach(btn => {
+                        btn.classList.remove('bg-[#7E5EFF]', 'text-white', 'active');
+                        btn.classList.add('bg-[#F3F4F4]', 'text-[#555555]');
+                    });
+                    button.classList.add('bg-[#7E5EFF]', 'text-white', 'active');
+                    button.classList.remove('bg-[#F3F4F4]', 'text-[#555555]');
+
+                    // 2. Filter logic
+                    const filterValue = button.getAttribute('data-filter');
+
+                    projectItems.forEach(item => {
+                        const category = item.getAttribute('data-category');
+
+                        if (filterValue === 'all' || category === filterValue) {
+                            item.style.display = 'block';
+                            // Small animation for smoothness
+                            item.animate([
+                                { opacity: 0, transform: 'scale(0.95)' },
+                                { opacity: 1, transform: 'scale(1)' }
+                            ], {
+                                duration: 300,
+                                easing: 'ease-out'
+                            });
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
         });
     </script>
 </body>

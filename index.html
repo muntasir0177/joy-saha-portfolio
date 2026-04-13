@@ -71,73 +71,97 @@
 	</div>
 
 	<!-- HERO -->
-
-	<section class="hero relative min-h-screen flex flex-col md:flex-row items-center overflow-hidden text-white">
-
-		<div class="absolute inset-y-0 left-0 w-2/5 z-0 bg-gradient-to-r from-[#0d0d0d] to-transparent hidden md:block">
-		</div>
+	<section
+		class="hero relative flex flex-col md:flex-row md:items-center overflow-hidden bg-[#0a0a0a] text-white min-h-screen md:min-h-0">
 
 		<span
-			class="absolute left-[40%] bottom-[15%] -translate-x-1/2 -translate-y-1/2 font-condensed font-black leading-none  text-white/30 pointer-events-none select-none z-0 md:hidden text-[clamp(60px,25vw,120px)] w-full text-center whitespace-nowrap">
+			class="absolute left-1/2 md:left-[45%] bottom-[5%] -translate-x-1/2 font-condensed font-black leading-none text-white/[0.03] pointer-events-none select-none z-0 text-[15vw] md:text-[20vw] whitespace-nowrap">
 			JOY SAHA
 		</span>
 
-		<div class="absolute right-0 bottom-0 h-full w-full md:w-auto z-10 pointer-events-none">
+		<div class="absolute inset-0 z-10 pointer-events-none">
+			<div
+				class="absolute right-0 bottom-0 w-full h-full bg-[radial-gradient(circle_at_50%_80%,rgba(124,92,252,0.3),transparent_65%)] md:bg-[radial-gradient(circle_at_70%_50%,rgba(124,92,252,0.15),transparent_70%)]">
+			</div>
 			<img src="assets/images/hero-bg.png" alt=""
-				class="h-full w-full object-cover md:object-contain object-bottom opacity-50 md:opacity-100"
-				onerror="this.style.display = 'none'" />
+				class="h-full w-full object-cover object-center opacity-40 md:opacity-100" />
 		</div>
 
+		<!-- Desktop profile image: absolute positioned on right -->
 		<div
-			class="absolute inset-x-0 bottom-0 h-[50%] md:h-[95%] md:inset-x-auto md:right-[10%] z-20 pointer-events-none flex justify-center items-end max-w-full md:max-w-[120%]">
-			<img src="assets/images/hero-profile.png" alt="Joy Saha" class="h-full object-contain object-bottom"
-				onerror="this.style.display = 'none'" />
+			class="hidden md:flex absolute inset-x-0 bottom-0 h-full z-20 pointer-events-none justify-end items-end md:right-[5%] lg:right-[10%]">
+			<img src="assets/images/hero-profile.png" alt="Joy Saha"
+				class="h-[95%] w-auto object-contain object-bottom transition-transform duration-700 hover:scale-105" />
 		</div>
 
+		<!-- Project thumbnail (desktop only) -->
 		<div
-			class="hidden md:block absolute right-[10%] bottom-[15%] z-30 rounded-2xl overflow-hidden border border-white/10 backdrop-blur-md bg-white/5 shadow-2xl w-76.5">
-			<img src="assets/images/thumbnail-image.png" alt="Project Preview" class="w-full block"
-				onerror="this.style.display = 'none'" />
+			class="hidden lg:block absolute right-[15%] top-1/2 -translate-y-1/2 z-30 rounded-2xl overflow-hidden border border-white/10 backdrop-blur-xl bg-white/5 shadow-2xl w-64 xl:w-80 transform rotate-2">
+			<img src="assets/images/thumbnail-image.png" alt="Project Preview" class="w-full h-auto block" />
 		</div>
 
-		<div class="z-40 px-6 md:px-16 lg:px-20 max-w-270 w-full pt-25 pb-12 md:py-0 md:mt-20">
-			<p class="text-[12px] md:text-[15px] font-semibold uppercase tracking-[0.14em] text-[#c8c9d4] mb-4">
-				Hi I'm <span class="text-[#7c5cfc]">Joy Saha</span>
+		<!-- Text Content -->
+		<div class="relative z-40 w-full
+              px-6 pt-6 pb-8 mt-[65px]
+              md:mt-[361px] md:mb-[293px] md:pl-[80px] md:pb-0 md:pt-0 md:w-auto">
+
+			<p class="inline-block text-[18px] md:text-[32px] font-bold uppercase text-[#c8c9d4] mb-4 md:mb-6">
+				Hi I'm <span class="text-[#7c5cfc] drop-shadow-[0_0_15px_rgba(124,92,252,0.5)]">Joy Saha</span>
 			</p>
 
-			<h1 class="font-condensed font-black uppercase leading-[1.05] md:leading-none mb-9"
-				style="font-size: clamp(4px, 8vw, 56px);">
+			<h1 class="font-condensed font-black uppercase leading-[1.05] md:leading-[0.95] mb-8 md:mb-10
+           text-[30px] sm:text-[45px] md:text-[80px]">
 
-				<span class="text-white block whitespace-nowrap">Crafting Visually</span>
-				<span class="text-white block whitespace-nowrap">
-					Compelling <span class="text-[#7a7b85] md:text-white">User</span>
+				<span class="block text-white whitespace-nowrap">Crafting Visually</span>
+
+				<span class="block text-white whitespace-nowrap">
+					Compelling
+					<span class="text-[#7c5cfc] md:text-white transition-colors duration-300">User</span>
 				</span>
-				<span class="text-[#7a7b85] block whitespace-nowrap">Focused Digital</span>
-				<span class="text-[#7a7b85] block whitespace-nowrap">Experiences</span>
+
+				<span class="block text-[#7a7b85] whitespace-nowrap">Focused Digital</span>
+
+				<span class="block text-[#7a7b85] whitespace-nowrap">Experiences</span>
 
 			</h1>
 
-			<a href="#"
-				class="inline-flex items-center gap-3 bg-[#775aeb] text-white text-[12px] md:text-[13px] font-semibold uppercase tracking-[0.1em] px-7 py-4 rounded-full transition-all duration-200 hover:-translate-y-0.5 shadow-[0_10px_20px_rgba(119,90,235,0.3)]">
-				View My Works
-				<svg class="w-[18px] h-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
-					stroke-linecap="round" stroke-linejoin="round">
-					<path d="M5 12h14M12 5l7 7-7 7" />
-				</svg>
-			</a>
+			<div class="flex flex-wrap gap-5">
+				<a href="#"
+					class="group relative inline-flex items-center gap-4 bg-[#775aeb] text-white text-[11px] md:text-[13px] font-bold uppercase tracking-[0.15em] px-8 md:px-10 py-4 md:py-5 rounded-full overflow-hidden transition-all duration-300 hover:shadow-[0_15px_30px_rgba(119,90,235,0.5)] hover:-translate-y-1">
+					<span class="relative z-10">View My Works</span>
+					<svg class="relative z-10 w-4 h-4 md:w-5 md:h-5 transition-transform duration-300 group-hover:translate-x-1"
+						viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+						<path d="M5 12h14M12 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" />
+					</svg>
+					<div
+						class="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700">
+					</div>
+				</a>
+			</div>
 		</div>
+
+		<!-- Mobile profile image: below content, in normal flow -->
+		<div class="relative flex md:hidden justify-center items-end w-full mt-auto">
+			<img src="assets/images/hero-profile.png" alt="Joy Saha" class="w-auto object-contain object-bottom z-20" />
+			<span
+				class="absolute left-[40%] bottom-[30%] -translate-x-1/2 -translate-y-1/2 font-condensed font-black leading-none  text-white/30 pointer-events-none select-none z-19 md:hidden text-[80px] w-full text-center whitespace-nowrap">
+				JOY SAHA
+			</span>
+		</div>
+
 	</section>
 
 
+
 	<!-- About Section -->
-	<section class="relative min-h-screen flex items-center overflow-hidden text-black bg-white md:pt-3">
+	<section class="relative flex items-center overflow-hidden text-black bg-white py-[105px]">
 		<span
 			class="absolute top-[5%] md:top-[.09%] left-[3%] font-condensed font-black leading-none text-[#E5E7EB] pointer-events-none select-none text-[clamp(80px,22vw,80px)] md:text-[clamp(100px,22vw,150px)] font-bold">
 			CREATIVE
 		</span>
 
 		<span
-			class="absolute bottom-[4%] md:bottom-[5%] right-[.09%] md:right-[5%] font-condensed font-black leading-none text-[#E5E7EB] pointer-events-none select-none z-12 text-[clamp(80px,22vw,80px)] md:text-[clamp(100px,22vw,150px)] font-bold">
+			class="absolute bottom-[8%] md:bottom-[5%] right-[.09%] md:right-[5%] font-condensed font-black leading-none text-[#E5E7EB] pointer-events-none select-none z-12 text-[clamp(80px,22vw,80px)] md:text-[clamp(100px,22vw,150px)] font-bold">
 			DESIGNER
 		</span>
 
@@ -160,7 +184,7 @@
 							</li>
 							<li class="splide__slide">
 								<img src="assets/images/thumbnail-image2.png" alt="thumb"
-									class="w-full object-cover aspect-348/160 max-md:rounded-xl" />
+									class="w-full object-cover aspect-348/260 max-md:rounded-xl" />
 							</li>
 							<li class="splide__slide">
 								<img src="assets/images/thumbnail-image3.png" alt="thumb"
@@ -578,80 +602,68 @@
 	</section>
 
 
-
-	<footer
-		class="w-full bg-[#050505] text-[#e5e5e5] pt-16 pb-10 px-6 md:px-12 lg:px-24 bg-gradient-to-t from-[#2a050c] via-[#050505] to-[#050505]">
-
-		<div class="mx-auto">
-			<div class="grid grid-cols-2 md:grid-cols-4 gap-y-12 gap-x-8 items-start">
-
-				<div class="col-span-2 md:col-span-1">
-					<h2 class="text-4xl font-bold tracking-tight mb-4 text-white uppercase">JOY SAHA</h2>
-					<p class="text-white text-[16px] leading-relaxed mb-6">
+	<footer class="main-footer">
+		<div class="container">
+			<div class="footer-grid">
+				<div class="footer-brand">
+					<h2 class="footer-logo">JOY SAHA</h2>
+					<p class="footer-description">
 						I craft intuitive digital experiences with a focus on usability and detail.
 					</p>
-					<div class="flex gap-3">
-						<a href="#"
-							class="w-10 h-10 rounded-full bg-[#1a1a1a] flex items-center justify-center border border-white/5 hover:bg-[#252525] transition-all">
+					<div class="social-links">
+						<a href="#" class="social-icon">
 							<img src="assets/images/footer-icon1.svg" alt="Social Media">
 						</a>
-						<a href="#"
-							class="w-10 h-10 rounded-full bg-[#1a1a1a] flex items-center justify-center border border-white/5 hover:bg-[#252525] transition-all">
+						<a href="#" class="social-icon">
 							<img src="assets/images/footer-icon.svg" alt="Social Media">
 						</a>
-						<a href="#"
-							class="w-10 h-10 rounded-full bg-[#1a1a1a] flex items-center justify-center border border-white/5 hover:bg-[#252525] transition-all">
+						<a href="#" class="social-icon">
 							<img src="assets/images/footer-icon3.svg" alt="Social Media">
 						</a>
-						<a href="#"
-							class="w-10 h-10 rounded-full bg-[#1a1a1a] flex items-center justify-center border border-white/5 hover:bg-[#252525] transition-all">
+						<a href="#" class="social-icon">
 							<img src="assets/images/footer-icon4.svg" alt="Social Media">
 						</a>
 					</div>
 				</div>
 
-				<div class="col-span-1">
-					<h3 class="text-[20px] font-bold uppercase tracking-[0.2em] mb-6 text-white">Services</h3>
-					<ul class="space-y-3 text-[16px] text-[#a1a1a1]">
-						<li><a href="#" class="hover:text-white transition-colors">UI Design</a></li>
-						<li><a href="#" class="hover:text-white transition-colors">UX Research</a></li>
-						<li><a href="#" class="hover:text-white transition-colors">Motion Design</a></li>
-						<li><a href="#" class="hover:text-white transition-colors">Brand Strategy</a></li>
-						<li><a href="#" class="hover:text-white transition-colors">Art Direction</a></li>
+				<div class="footer-column">
+					<h3 class="column-title">Services</h3>
+					<ul class="column-list">
+						<li><a href="#">UI Design</a></li>
+						<li><a href="#">UX Research</a></li>
+						<li><a href="#">Motion Design</a></li>
+						<li><a href="#">Brand Strategy</a></li>
+						<li><a href="#">Art Direction</a></li>
 					</ul>
 				</div>
 
-				<div class="col-span-1">
-					<h3 class="text-[20px] font-bold uppercase tracking-[0.2em] mb-6 text-white">Connect</h3>
-					<ul class="space-y-3 text-[16px] text-[#a1a1a1]">
-						<li><a href="#" class="hover:text-white transition-colors">LinkedIn</a></li>
-						<li><a href="#" class="hover:text-white transition-colors">Dribbble</a></li>
-						<li><a href="#" class="hover:text-white transition-colors">Behance</a></li>
-						<li><a href="#" class="hover:text-white transition-colors">Instagram</a></li>
-						<li><a href="#" class="hover:text-white transition-colors">Twitter</a></li>
+				<div class="footer-column">
+					<h3 class="column-title">Connect</h3>
+					<ul class="column-list">
+						<li><a href="#">LinkedIn</a></li>
+						<li><a href="#">Dribbble</a></li>
+						<li><a href="#">Behance</a></li>
+						<li><a href="#">Instagram</a></li>
+						<li><a href="#">Twitter</a></li>
 					</ul>
 				</div>
 
-				<div class="col-span-2 md:col-span-1">
-					<h3 class="text-[20px] font-bold uppercase tracking-[0.2em] mb-6 text-white">Contact</h3>
-					<ul class="space-y-4 text-[16px] text-[#a1a1a1]">
-						<li><a href="mailto:hello@sharifahammed.com"
-								class="hover:text-white transition-colors">hello@sharifahammed.com</a></li>
-						<li><a href="tel:+15551234567" class="hover:text-white transition-colors">+1 (555) 123-4567</a>
-						</li>
-						<li class="pt-2">Brooklyn, NY</li>
+				<div class="footer-column footer-contact">
+					<h3 class="column-title">Contact</h3>
+					<ul class="column-list contact-list">
+						<li><a href="mailto:hello@sharifahammed.com">hello@sharifahammed.com</a></li>
+						<li><a href="tel:+15551234567">+1 (555) 123-4567</a></li>
+						<li class="location">Brooklyn, NY</li>
 					</ul>
 				</div>
-
 			</div>
 
-			<div class="mt-24 pt-8 border-t border-white/5 flex justify-center">
-				<p class="text-[16px] text-offwhite tracking-wide uppercase">
-					© 2026 All Rights Reserved
-				</p>
+			<div class="footer-bottom">
+				<p class="copyright-text">© 2026 All Rights Reserved</p>
 			</div>
 		</div>
 	</footer>
+
 
 	<script src="assets/js/script.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
