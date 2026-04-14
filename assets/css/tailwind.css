@@ -1,4 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap");
 @import "tailwindcss";
+
+body,
+html,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+div,
+a,
+button,
+input,
+textarea,
+ul,
+li {
+    font-family: "Inter Tight", sans-serif;
+}
 
 .hero {
     /* background: black; */
