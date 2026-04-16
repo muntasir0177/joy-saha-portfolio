@@ -11,7 +11,7 @@
 
 <body class="bg-[#FAFAFA]" id="home-page">
 	<nav id="navbar" class="fixed top-0 left-0 right-0 z-[100] py-5">
-		<div class="container mx-auto px-6 md:px-0 flex items-center justify-between">
+		<div class="container mx-auto px-4 md:px-0 flex items-center justify-between">
 
 			<div class="flex items-center gap-16">
 				<a href="index.html" class="flex items-center gap-3 shrink-0">
@@ -72,86 +72,72 @@
 	</div>
 
 	<!-- HERO -->
-	<section
-		class="hero relative flex flex-col md:flex-row md:items-center overflow-hidden bg-[#0a0a0a] text-white min-h-screen md:min-h-0">
-		<!-- <div class="container mx-auto"> -->
-		<span
-			class="absolute left-1/2 md:left-[45%] bottom-[5%] -translate-x-1/2 font-condensed font-black leading-none text-white/[0.03] pointer-events-none select-none z-0 text-[15vw] md:text-[20vw] whitespace-nowrap">
-			JOY SAHA
-		</span>
+	<section class="hero relative bg-[#020202] flex items-center overflow-hidden">
 
-		<div class="absolute inset-0 z-10 pointer-events-none">
-			<div
-				class="absolute right-0 bottom-0 w-full h-full bg-[radial-gradient(circle_at_50%_80%,rgba(124,92,252,0.3),transparent_65%)] md:bg-[radial-gradient(circle_at_70%_50%,rgba(124,92,252,0.15),transparent_70%)]">
-			</div>
-			<img src="assets/images/hero-bg.png" alt=""
-				class="h-full w-full object-cover object-center opacity-40 md:opacity-100" />
-		</div>
+		<!-- <div
+			class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[600px] bg-[#611232] opacity-30 blur-[120px] rounded-full pointer-events-none">
+		</div> -->
 
-		<!-- Desktop profile image: absolute positioned on right -->
-		<div
-			class="hidden md:flex absolute inset-x-0 bottom-0 h-full z-20 pointer-events-none justify-end items-end md:right-[5%] lg:right-[10%]">
-			<img src="assets/images/hero-profile.png" alt="Joy Saha"
-				class="h-[95%] w-auto object-contain object-bottom transition-transform duration-700 hover:scale-105" />
-		</div>
+		<div class="container mx-auto relative z-10">
+			<div class="grid grid-cols-12 items-center">
 
-		<!-- Project thumbnail (desktop only) -->
-		<div
-			class="hidden lg:block absolute right-[13%] bottom-[300px] -translate-y-1/2 z-30 rounded-2xl overflow-hidden border border-white/10 backdrop-blur-xl bg-white/5 shadow-2xl max-w-64 xl:w-80 transform rotate-2">
-			<img src="assets/images/thumbnail-image.png" alt="Project Preview" class="w-full h-auto block" />
-		</div>
+				<div class="col-span-12 md:col-span-7 lg:col-span-6 pt-40 pb-0 md:py-60 px-3 md:px-0 ">
+					<p class="text-white text-[20px] md:text-[32px] font-semibold mb-6 tracking-wide">
+						HI I'M <span class="text-[#7c5cfc]">JOY SAHA</span>
+					</p>
 
-		<!-- Text Content -->
-		<div class="relative z-40 w-full
-              px-6 pt-6 pb-8 mt-[65px]
-              md:mt-[361px] md:mb-[293px] md:pl-[80px] md:pb-0 md:pt-0 md:w-auto">
+					<h1
+						class="text-white text-[34px] md:text-[80px] font-black leading-[0.95] uppercase tracking-tighter">
+						Crafting Visually<br>
+						Compelling <span class="text-white/40">User<br>
+							Focused Digital<br>
+							Experiences</span>
+					</h1>
 
-			<p class="inline-block text-[18px] md:text-[32px] font-bold uppercase text-[#c8c9d4] mb-4 md:mb-6">
-				Hi I'm <span class="text-[#7c5cfc] drop-shadow-[0_0_15px_rgba(124,92,252,0.5)]">Joy Saha</span>
-			</p>
-
-			<h1 class="font-condensed font-black uppercase leading-[1.05] md:leading-[0.95] mb-8 md:mb-10
-           text-[30px] sm:text-[45px] md:text-[80px]">
-
-				<span class="block text-white whitespace-nowrap">Crafting Visually</span>
-
-				<span class="block text-white whitespace-nowrap">
-					Compelling
-					<span class="text-[rgba(255,255,255,0.60)] transition-colors duration-300">
-						User
-					</span>
-
-					<span class="block text-[rgba(255,255,255,0.60)] whitespace-nowrap">Focused Digital</span>
-
-					<span class="block text-[rgba(255,255,255,0.60)] whitespace-nowrap">Experiences</span>
-
-			</h1>
-
-			<div class="flex flex-wrap gap-5">
-				<a href="#"
-					class="group relative inline-flex items-center gap-4 bg-[radial-gradient(50%_50%_at_50%_50%,#3818B7_0%,#7E5EFF_100%)] shadow-[inset_0_0_10px_rgba(255,255,255,0.25),inset_0_0_20px_rgba(255,255,255,0.5)] text-white text-[11px] md:text-[13px] font-bold uppercase tracking-[0.15em] px-6 md:px-8 py-3 md:py-4 rounded-full overflow-hidden transition-all duration-300 hover:shadow-[0_15px_30px_rgba(119,90,235,0.5)] hover:-translate-y-1">
-					<span class="relative z-10">View My Works</span>
-					<svg class="relative z-10 w-4 h-4 md:w-5 md:h-5 transition-transform duration-300 group-hover:translate-x-1"
-						viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
-						<path d="M5 12h14M12 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" />
-					</svg>
-					<div
-						class="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700">
+					<div class="flex flex-wrap gap-5 py-5 md:py-10">
+						<a href="#"
+							class="group relative inline-flex items-center gap-4 bg-[radial-gradient(50%_50%_at_50%_50%,#3818B7_0%,#7E5EFF_100%)] shadow-[inset_0_0_10px_rgba(255,255,255,0.25),inset_0_0_20px_rgba(255,255,255,0.5)] text-white text-[11px] md:text-[13px] font-bold uppercase tracking-[0.15em] px-6 md:px-8 py-3 md:py-4 rounded-full overflow-hidden transition-all duration-300 hover:shadow-[0_15px_30px_rgba(119,90,235,0.5)] hover:-translate-y-1">
+							<span class="relative z-10">View My Works</span>
+							<svg class="relative z-10 w-4 h-4 md:w-5 md:h-5 transition-transform duration-300 group-hover:translate-x-1"
+								viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+								<path d="M5 12h14M12 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" />
+							</svg>
+							<div
+								class="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700">
+							</div>
+						</a>
 					</div>
-				</a>
-			</div>
-		</div>
+				</div>
 
-		<!-- Mobile profile image: below content, in normal flow -->
-		<div class="relative flex md:hidden justify-center items-end w-full mt-auto">
-			<img src="assets/images/hero-profile.png" alt="Joy Saha" class="w-auto object-contain object-bottom z-20" />
-			<span
-				class="absolute left-[40%] bottom-[30%] -translate-x-1/2 -translate-y-1/2 font-condensed font-black leading-none  text-white/30 pointer-events-none select-none z-19 lg:hidden text-[80px] w-full text-center whitespace-nowrap">
-				JOY SAHA
-			</span>
-		</div>
+				<div class="col-span-12 md:col-span-5 lg:col-span-6 relative flex justify-end items-end md:-ml-50">
+
+					<div class="block lg:hidden absolute right-[10%] bottom-[45%] select-none w-full">
+						<span
+							class="text-[100px] font-black text-white/[0.1] leading-none uppercase tracking-tighter block whitespace-nowrap text-right translate-x-10 scale-x-110">
+							Joy Saha
+						</span>
+					</div>
+
+					<div class="relative z-20 w-full">
+						<img src="assets/images/hero-profile.png" alt="Joy Saha" class="w-full object-contain" />
+
+						<div class="hidden md:hidden lg:block absolute right-0 bottom-[30%] z-30 max-w-[306px]">
+							<div
+								class="bg-[#1a1a1a]/80 backdrop-blur-xl border border-white/10 p-2 rounded-xl shadow-2xl">
+								<img src="assets/images/thumbnail-image.png" alt="Work Preview"
+									class="rounded-xl w-full brightness-90" />
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
 		</div>
 	</section>
+
+
+
 
 
 
